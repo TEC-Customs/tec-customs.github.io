@@ -3,6 +3,7 @@
    --------------------------------------------------------------------------
    👉 To show a different trade, change ONE line:  trade: "hvac"
       Options: hvac · plumbing · electrical · roofing · pest · solar · auto · autobody · garage
+               · cleaning · locksmith · appliance · masonry
       (Or just add ?trade=plumbing to the page URL; the ribbon menu does this.)
 
    Everything else (business name, services, prices, FAQs, Spanish text) comes

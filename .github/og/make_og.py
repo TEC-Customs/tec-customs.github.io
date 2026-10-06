@@ -48,7 +48,7 @@ background:linear-gradient(135deg,#0f2a44,#1b4a73);color:#fff;display:flex;align
 <div style="flex:1;padding:0 0 0 64px">
  <div style="font-size:20px;letter-spacing:5px;color:#ffb347;font-weight:800">TEC CUSTOMS · DEMO</div>
  <div style="font-size:58px;font-weight:800;line-height:1.08;margin:14px 0 18px">A 24/7 chat assistant<br>for local businesses</div>
- <div style="font-size:25px;line-height:1.45;opacity:.92">Answers questions, captures leads and<br>gets customers scheduled, even at night.<br>English &amp; Spanish · 9 trades</div>
+ <div style="font-size:25px;line-height:1.45;opacity:.92">Answers questions, captures leads and<br>gets customers scheduled, even at night.<br>English &amp; Spanish · 13 trades</div>
  <div style="display:inline-block;margin-top:26px;background:#f26b1d;font-weight:800;font-size:24px;padding:12px 24px;border-radius:999px">Try the live demo →</div>
 </div>
 <div style="width:430px;height:630px;display:flex;align-items:center;justify-content:center;padding-right:48px">

@@ -7,7 +7,8 @@
      <script src="tec-chat.js" defer></script>
    The CSS (tec-chat.css) is auto-loaded from the same folder as this script.
    Demo URL flags (only when business.isDemo is true):
-     ?trade=hvac|plumbing|electrical|roofing|pest|solar|auto|autobody|garage
+     ?trade=hvac|plumbing|electrical|roofing|pest|solar|auto|autobody|garage|
+            cleaning|locksmith|appliance|masonry
      ?booking=request|external|demo-calendar · ?mode=afterhours|open
    Any site: ?lang=es · ?fast=1 (instant replies, for testing)
    ========================================================================== */

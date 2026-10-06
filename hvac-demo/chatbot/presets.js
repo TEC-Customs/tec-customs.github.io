@@ -6352,5 +6352,2874 @@ window.TEC_PRESETS = {
 "p":"{bot} answers questions and books your repair 24/7."
 }
 }
+},
+"cleaning":{
+"trade":"cleaning",
+"label":"Cleaning",
+"business":{
+"name":"Desert Bloom Cleaning Co. (Demo)",
+"shortName":"Desert Bloom Cleaning",
+"phone":"(760) 555-0113",
+"phoneHref":"tel:+17605550113",
+"email":"service@desertbloomcleaning.example",
+"license":"Business Lic. #000000 · bonded & insured (demo placeholder)",
+"timezone":"America/Los_Angeles"
+},
+"theme":{
+"brand":"#0f3d3e",
+"accent":"#be185d"
+},
+"hours":{
+"0":null,
+"1":[
+7,
+18
+],
+"2":[
+7,
+18
+],
+"3":[
+7,
+18
+],
+"4":[
+7,
+18
+],
+"5":[
+7,
+18
+],
+"6":[
+8,
+14
+]
+},
+"hoursText":{
+"en":"Mon–Fri 7 AM–6 PM · Sat 8 AM–2 PM · Sun closed",
+"es":"Lun–Vie 7 AM–6 PM · Sáb 8 AM–2 PM · Dom cerrado"
+},
+"serviceArea":{
+"summary":{
+"en":"the Victor Valley / High Desert",
+"es":"el Victor Valley / High Desert"
+},
+"cities":[
+"Apple Valley",
+"Victorville",
+"Hesperia",
+"Adelanto",
+"Spring Valley Lake",
+"Lucerne Valley",
+"Phelan",
+"Oak Hills",
+"Piñon Hills",
+"Helendale"
+],
+"zips":{
+"92307":"Apple Valley",
+"92308":"Apple Valley",
+"92392":"Victorville",
+"92394":"Victorville",
+"92395":"Victorville",
+"92344":"Hesperia/Oak Hills",
+"92345":"Hesperia",
+"92340":"Hesperia",
+"92301":"Adelanto",
+"92356":"Lucerne Valley",
+"92371":"Phelan",
+"92372":"Piñon Hills",
+"92342":"Helendale"
+},
+"nearbyNotCovered":[
+"Barstow",
+"Lancaster",
+"Palmdale",
+"Big Bear",
+"Wrightwood",
+"San Bernardino",
+"Yucca Valley"
+]
+},
+"bot":{
+"name":"Sparkle",
+"avatar":"✨",
+"teaser":{
+"en":"Hi! Need a house cleaning, move-out clean or carpet cleaning? I can give prices and get you on the schedule.",
+"es":"¡Hola! ¿Necesita limpieza de casa, de mudanza o de alfombras? Le doy precios y le agendo."
+}
+},
+"emergency":{
+"available24x7":false,
+"responseText":{
+"en":"We don't run a 24/7 emergency line, but leave your info and we'll call you first thing during business hours. For flooding or water damage, call a water-damage restoration company right away.",
+"es":"No tenemos línea de emergencias 24/7, pero deje sus datos y le llamamos a primera hora en horario de oficina. Si hay inundación o daño por agua, llame de inmediato a una compañía de restauración."
+},
+"afterHoursFee":{
+"en":"",
+"es":""
+},
+"callbackPromise":{
+"en":"we'll call you first thing in the morning",
+"es":"le llamaremos a primera hora de la mañana"
+},
+"patterns":[]
+},
+"safety":[
+{
+"patterns":[
+"mixed (bleach|ammonia|chemicals|cleaners)",
+"bleach and ammonia",
+"ammonia and bleach",
+"chemical (smell|fumes)",
+"fumes",
+"can'?t breathe",
+"hard to breathe",
+"drank (bleach|cleaner)",
+"swallowed (bleach|cleaner|soap|detergent)",
+"mezcle (cloro|amoniaco|quimicos)",
+"cloro y amoniaco",
+"vapores",
+"no puedo respirar",
+"se tomo (cloro|limpiador)",
+"trago (cloro|limpiador|jabon)"
+],
+"answer":{
+"en":"⚠️ <b>Safety first.</b> Mixing cleaners (like bleach with ammonia or acids) can make toxic fumes.<ol class='tc-ul'><li><b>Get everyone, including pets, into fresh air</b> and open windows if you can do it quickly.</li><li>Don't try to clean it up yet.</li><li>Call <b>Poison Control at 1-800-222-1222</b>. If anyone has trouble breathing or swallowed something, <b>call 911</b>.</li></ol>Then call us at <a href='{phoneHref}'>{phone}</a>.",
+"es":"⚠️ <b>Primero la seguridad.</b> Mezclar limpiadores (como cloro con amoníaco o ácidos) puede producir vapores tóxicos.<ol class='tc-ul'><li><b>Salga con todos, incluso las mascotas, al aire libre</b> y abra ventanas si puede hacerlo rápido.</li><li>No intente limpiarlo todavía.</li><li>Llame a <b>Control de Envenenamientos al 1-800-222-1222</b>. Si alguien tiene dificultad para respirar o se tragó algo, <b>llame al 911</b>.</li></ol>Luego llámenos al <a href='{phoneHref}'>{phone}</a>."
+}
+}
+],
+"services":[
+{
+"id":"house",
+"icon":"🏠",
+"name":{
+"en":"Recurring house cleaning",
+"es":"Limpieza de casa recurrente"
+},
+"desc":{
+"en":"Weekly, every-other-week or monthly cleaning with the same bonded team each visit.",
+"es":"Limpieza semanal, cada dos semanas o mensual, con el mismo equipo afianzado en cada visita."
+},
+"keywords":[
+"house cleaning",
+"home cleaning",
+"house cleaner",
+"maid",
+"maids",
+"housekeeper",
+"housekeeping",
+"recurring",
+"weekly",
+"biweekly",
+"every other week",
+"monthly cleaning",
+"limpieza de casa",
+"limpieza del hogar",
+"limpieza semanal",
+"muchacha",
+"sirvienta"
+],
+"ask":"Do you do every-other-week house cleaning?"
+},
+{
+"id":"deep",
+"icon":"✨",
+"name":{
+"en":"Deep cleaning",
+"es":"Limpieza profunda"
+},
+"desc":{
+"en":"Top-to-bottom first-time or spring cleaning: baseboards, doors, vents, inside the microwave and grout scrubbing.",
+"es":"Limpieza a fondo de primera vez o de temporada: zoclos, puertas, rejillas, dentro del microondas y lechada."
+},
+"keywords":[
+"deep clean",
+"deep cleaning",
+"spring cleaning",
+"first time cleaning",
+"first cleaning",
+"top to bottom",
+"baseboards",
+"grout",
+"limpieza profunda",
+"limpieza a fondo"
+],
+"ask":"How much is a deep cleaning?"
+},
+{
+"id":"move",
+"icon":"📦",
+"name":{
+"en":"Move-in / move-out cleaning",
+"es":"Limpieza de mudanza"
+},
+"desc":{
+"en":"Empty-home cleaning built around landlord and property-manager checklists, including inside cabinets, oven and fridge.",
+"es":"Limpieza de casa vacía según las listas de arrendadores y administradores, incluso dentro de gabinetes, horno y refrigerador."
+},
+"keywords":[
+"move out",
+"move-out",
+"moveout",
+"move in",
+"move-in",
+"moving out",
+"moving in",
+"end of lease",
+"deposit back",
+"security deposit",
+"rental turnover",
+"vacant",
+"mudanza",
+"me mudo",
+"nos mudamos",
+"casa vacia",
+"deposito"
+],
+"ask":"Do you do move-out cleaning?"
+},
+{
+"id":"carpet",
+"icon":"🧼",
+"name":{
+"en":"Carpet & upholstery cleaning",
+"es":"Limpieza de alfombras y muebles"
+},
+"desc":{
+"en":"Hot-water extraction for carpets, rugs, sofas and sectionals, with pet-odor and spot treatment.",
+"es":"Extracción con agua caliente para alfombras, tapetes, sofás y salas, con tratamiento de manchas y olores de mascotas."
+},
+"keywords":[
+"carpet",
+"carpets",
+"carpet cleaning",
+"rug",
+"rugs",
+"upholstery",
+"couch",
+"sofa",
+"sectional",
+"pet stain",
+"pet stains",
+"pet urine",
+"stain",
+"stains",
+"steam clean",
+"alfombra",
+"alfombras",
+"tapete",
+"sillon",
+"manchas",
+"orina"
+],
+"tips":{
+"en":[
+"Blot fresh spills with a clean white towel. Don't rub, which spreads the stain",
+"For pet accidents, blot and rinse lightly with cool water. Skip heat, steam and strong-scented sprays, which can set the odor",
+"Keep pets off the spot until it's treated"
+],
+"es":[
+"Seque los derrames con una toalla blanca limpia, sin tallar, para no extender la mancha",
+"Si es de mascota, seque y enjuague ligeramente con agua fría. Evite calor, vapor y aerosoles perfumados, que fijan el olor",
+"Mantenga a las mascotas lejos de la mancha hasta tratarla"
+]
+},
+"ask":"My carpet smells like pet urine"
+},
+{
+"id":"commercial",
+"icon":"🏢",
+"name":{
+"en":"Office & commercial cleaning",
+"es":"Limpieza de oficinas y negocios"
+},
+"desc":{
+"en":"Offices, retail stores and waiting rooms, cleaned nightly or weekly on your schedule.",
+"es":"Oficinas, tiendas y salas de espera, limpiadas cada noche o cada semana según su horario."
+},
+"keywords":[
+"commercial",
+"office",
+"offices",
+"office cleaning",
+"janitorial",
+"retail",
+"store",
+"business cleaning",
+"waiting room",
+"oficina",
+"oficinas",
+"negocio",
+"comercial"
+],
+"ask":"Do you clean offices?"
+}
+],
+"pricing":{
+"disclaimer":{
+"en":"Example pricing for this demo only. A real business sets its own prices, and the exact price is confirmed before any work starts.",
+"es":"Precios de ejemplo solo para esta demostración. Cada negocio fija sus propios precios, y el precio exacto se confirma antes de empezar cualquier trabajo."
+},
+"items":[
+{
+"label":{
+"en":"Standard cleaning (2 bed / 2 bath)",
+"es":"Limpieza estándar (2 rec / 2 baños)"
+},
+"price":{
+"en":"$140–$180",
+"es":"$140–$180"
+},
+"keywords":[
+"standard",
+"house cleaning",
+"cleaning",
+"clean",
+"limpieza",
+"casa"
+]
+},
+{
+"label":{
+"en":"Recurring every-other-week visit",
+"es":"Visita recurrente cada dos semanas"
+},
+"price":{
+"en":"$120–$150 per visit",
+"es":"$120–$150 por visita"
+},
+"keywords":[
+"recurring",
+"biweekly",
+"every other week",
+"weekly",
+"monthly",
+"recurrente",
+"semanal"
+]
+},
+{
+"label":{
+"en":"Deep cleaning (typical 3 bed)",
+"es":"Limpieza profunda (casa típica de 3 rec)"
+},
+"price":{
+"en":"$260–$420",
+"es":"$260–$420"
+},
+"keywords":[
+"deep",
+"first time",
+"spring",
+"profunda",
+"a fondo"
+]
+},
+{
+"label":{
+"en":"Move-in / move-out cleaning",
+"es":"Limpieza de mudanza"
+},
+"price":{
+"en":"$300–$500 (empty home)",
+"es":"$300–$500 (casa vacía)"
+},
+"keywords":[
+"move",
+"moving",
+"deposit",
+"vacant",
+"mudanza",
+"vacia"
+]
+},
+{
+"label":{
+"en":"Carpet cleaning",
+"es":"Limpieza de alfombras"
+},
+"price":{
+"en":"$45 per room (min. $129)",
+"es":"$45 por cuarto (mín. $129)"
+},
+"keywords":[
+"carpet",
+"rug",
+"stain",
+"alfombra",
+"tapete"
+]
+},
+{
+"label":{
+"en":"Sofa / sectional cleaning",
+"es":"Limpieza de sofá / sala"
+},
+"price":{
+"en":"$99–$199",
+"es":"$99–$199"
+},
+"keywords":[
+"sofa",
+"couch",
+"upholstery",
+"sectional",
+"sillon",
+"sala"
+]
+},
+{
+"label":{
+"en":"Office cleaning",
+"es":"Limpieza de oficinas"
+},
+"price":{
+"en":"Free walk-through quote",
+"es":"Cotización gratis en sitio"
+},
+"keywords":[
+"office",
+"commercial",
+"janitorial",
+"oficina",
+"comercial"
+]
+}
+]
+},
+"financing":null,
+"maintenancePlan":{
+"name":"Fresh Home Plan",
+"price":{
+"en":"$129 per visit, every other week (example)",
+"es":"$129 por visita, cada dos semanas (ejemplo)"
+},
+"perks":{
+"en":[
+"Same cleaning team every visit",
+"Locked-in recurring rate",
+"Free fridge or oven clean-out once a quarter",
+"Easy skip or reschedule by text"
+],
+"es":[
+"El mismo equipo en cada visita",
+"Precio recurrente fijo",
+"Limpieza gratis del refri u horno cada trimestre",
+"Cancele o cambie la visita por mensaje"
+]
+},
+"pitch":{
+"en":"High Desert dust gets everywhere. A regular schedule keeps it from piling up, so you get your weekends back.",
+"es":"El polvo del High Desert se mete en todo. Una limpieza regular evita que se acumule y usted recupera sus fines de semana."
+}
+},
+"issueChips":{
+"en":[
+"Book a house cleaning",
+"Deep cleaning",
+"Move-out cleaning",
+"Carpet cleaning",
+"Office cleaning"
+],
+"es":[
+"Agendar limpieza de casa",
+"Limpieza profunda",
+"Limpieza de mudanza",
+"Limpieza de alfombras",
+"Limpieza de oficina"
+]
+},
+"faqs":[
+{
+"id":"license",
+"q":"Are you bonded and insured?",
+"patterns":[
+"licensed",
+"license",
+"insured",
+"insurance",
+"bonded",
+"background check",
+"trust",
+"licencia",
+"asegurado",
+"afianzado"
+],
+"answer":{
+"en":"Yes. We're <b>bonded and insured</b>, and every cleaner is background-checked.<br><small>{license}</small>",
+"es":"Sí. Estamos <b>afianzados y asegurados</b>, y revisamos los antecedentes de cada persona.<br><small>{license}</small>"
+}
+},
+{
+"id":"supplies",
+"q":"Do I need to provide supplies?",
+"patterns":[
+"supplies",
+"bring (your own )?(products|equipment|vacuum)",
+"products",
+"eco",
+"green",
+"non[- ]toxic",
+"pet safe",
+"productos",
+"materiales",
+"traen"
+],
+"answer":{
+"en":"No. We bring all supplies and equipment. Prefer <b>eco-friendly or fragrance-free products</b>? Just tell us when you book.",
+"es":"No. Nosotros llevamos todos los productos y el equipo. ¿Prefiere <b>productos ecológicos o sin olor</b>? Díganos al agendar."
+}
+},
+{
+"id":"home",
+"q":"Do I need to be home?",
+"patterns":[
+"be home",
+"need to be there",
+"be there",
+"key",
+"lockbox",
+"garage code",
+"estar en casa",
+"tengo que estar",
+"llave"
+],
+"answer":{
+"en":"No. Many clients leave a key, lockbox or door code. We'll text you when we arrive and when we're done.",
+"es":"No. Muchos clientes dejan una llave, caja de seguridad o código. Le enviamos un mensaje al llegar y al terminar."
+}
+},
+{
+"id":"drytime",
+"q":"How long does carpet take to dry?",
+"patterns":[
+"dry time",
+"take to dry",
+"to dry",
+"how long.*dry",
+"walk on (the )?carpet",
+"secar",
+"seque",
+"seca"
+],
+"answer":{
+"en":"Usually <b>4–8 hours</b>. The dry desert air helps. Run fans or the AC to speed it up.",
+"es":"Normalmente <b>4 a 8 horas</b>. El aire seco del desierto ayuda. Use ventiladores o el aire acondicionado para acelerarlo."
+}
+},
+{
+"id":"howlong",
+"q":"How long does a cleaning take?",
+"patterns":[
+"how long",
+"how many hours",
+"cuanto tarda",
+"cuantas horas",
+"cuanto tiempo"
+],
+"answer":{
+"en":"A standard cleaning takes about <b>2–3 hours</b> with a 2-person team. Deep and move-out cleanings take <b>4–6 hours</b>.",
+"es":"Una limpieza estándar toma unas <b>2 a 3 horas</b> con un equipo de 2 personas. Las profundas y de mudanza toman <b>4 a 6 horas</b>."
+}
+},
+{
+"id":"warranty",
+"q":"What if I'm not happy?",
+"patterns":[
+"warranty",
+"guarantee",
+"not happy",
+"missed (a )?spot",
+"satisf\\w*",
+"re-?clean",
+"garantia",
+"no quede contento",
+"satisfecho"
+],
+"answer":{
+"en":"Our <b>24-hour re-clean guarantee</b>: if we missed something, tell us within a day and we'll come back and fix it free (example terms).",
+"es":"Nuestra <b>garantía de 24 horas</b>: si se nos pasó algo, avísenos dentro de un día y regresamos a corregirlo gratis (términos de ejemplo)."
+}
+},
+{
+"id":"payment",
+"patterns":[
+"pay with",
+"credit card",
+"cash",
+"check",
+"venmo",
+"zelle",
+"payment methods",
+"accept cards",
+"tarjeta",
+"efectivo",
+"formas de pago",
+"aceptan"
+],
+"answer":{
+"en":"We accept all major credit cards, debit, cash, check and Zelle. Card on file makes recurring visits easy.",
+"es":"Aceptamos tarjetas de crédito y débito, efectivo, cheque y Zelle. Con tarjeta registrada, las visitas recurrentes son más fáciles."
+}
+},
+{
+"id":"discounts",
+"patterns":[
+"discount",
+"military",
+"veteran",
+"senior",
+"coupon",
+"deal",
+"special",
+"promo",
+"descuento",
+"militar",
+"veterano",
+"cupon",
+"oferta"
+],
+"answer":{
+"en":"We offer <b>10% off for seniors, military, veterans and first responders</b> (example offer).",
+"es":"Ofrecemos <b>10% de descuento para personas mayores, militares, veteranos y personal de emergencia</b> (oferta de ejemplo)."
+}
+},
+{
+"id":"reviews",
+"patterns":[
+"reviews",
+"rating",
+"ratings",
+"testimonials",
+"yelp",
+"google reviews",
+"resenas",
+"opiniones",
+"calificaciones"
+],
+"answer":{
+"en":"Customers rate us highly for showing up on time and explaining options clearly. (On a real site, this links to the Google Business Profile.)",
+"es":"Nuestros clientes nos califican muy bien por llegar a tiempo y explicar las opciones claramente. (En un sitio real, esto enlaza al perfil de Google.)"
+}
+}
+],
+"site":{
+"headline":"A spotless home without lifting a finger, across the High Desert",
+"lead":"Recurring house cleaning, deep cleans, move-out cleaning and carpet care by a bonded, background-checked local team.",
+"trust":[
+"<b>★ 4.9</b> sample rating",
+"✔ Bonded &amp; insured",
+"🧼 Carpet &amp; upholstery",
+"🔁 24-hr re-clean guarantee"
+],
+"badge":"✨ Spotless",
+"promo":{
+"text":"🧽 <b>First deep clean:</b> $40 off <small>(example offer)</small>",
+"ask":"How much is a deep cleaning?"
+},
+"why":[
+[
+"👥 Same team",
+"The same bonded cleaners every visit, so they learn your home."
+],
+[
+"💵 Upfront pricing",
+"Flat prices by home size. You approve before we start."
+],
+[
+"🧪 Your products, your way",
+"Eco-friendly, fragrance-free and pet-safe options on request."
+],
+[
+"🛡 Guaranteed",
+"Missed a spot? We come back within 24 hours (demo terms)."
+]
+],
+"reviews":[
+[
+"Booked a move-out clean through the chat on Sunday night. Got my full deposit back.",
+"K. M., Victorville"
+],
+[
+"Same two cleaners every other Friday. The house smells amazing when I get home.",
+"D. P., Apple Valley"
+],
+[
+"They got the dog stains out of our carpet that I'd given up on.",
+"S. G., Hesperia"
+]
+],
+"ctaBand":{
+"h":"Want your weekends back?",
+"p":"{bot} answers questions and takes your cleaning request in about a minute."
+}
+}
+},
+"locksmith":{
+"trade":"locksmith",
+"label":"Locksmith",
+"business":{
+"name":"Silver Sage Lock & Key (Demo)",
+"shortName":"Silver Sage Lock & Key",
+"phone":"(760) 555-0119",
+"phoneHref":"tel:+17605550119",
+"email":"service@silversagelockkey.example",
+"license":"CA Locksmith Lic. #LCO 0000 (demo placeholder)",
+"timezone":"America/Los_Angeles"
+},
+"theme":{
+"brand":"#1c1917",
+"accent":"#b45309"
+},
+"hours":{
+"0":null,
+"1":[
+7,
+18
+],
+"2":[
+7,
+18
+],
+"3":[
+7,
+18
+],
+"4":[
+7,
+18
+],
+"5":[
+7,
+18
+],
+"6":[
+8,
+14
+]
+},
+"hoursText":{
+"en":"Mon–Fri 7 AM–6 PM · Sat 8 AM–2 PM · Sun closed",
+"es":"Lun–Vie 7 AM–6 PM · Sáb 8 AM–2 PM · Dom cerrado"
+},
+"serviceArea":{
+"summary":{
+"en":"the Victor Valley / High Desert",
+"es":"el Victor Valley / High Desert"
+},
+"cities":[
+"Apple Valley",
+"Victorville",
+"Hesperia",
+"Adelanto",
+"Spring Valley Lake",
+"Lucerne Valley",
+"Phelan",
+"Oak Hills",
+"Piñon Hills",
+"Helendale"
+],
+"zips":{
+"92307":"Apple Valley",
+"92308":"Apple Valley",
+"92392":"Victorville",
+"92394":"Victorville",
+"92395":"Victorville",
+"92344":"Hesperia/Oak Hills",
+"92345":"Hesperia",
+"92340":"Hesperia",
+"92301":"Adelanto",
+"92356":"Lucerne Valley",
+"92371":"Phelan",
+"92372":"Piñon Hills",
+"92342":"Helendale"
+},
+"nearbyNotCovered":[
+"Barstow",
+"Lancaster",
+"Palmdale",
+"Big Bear",
+"Wrightwood",
+"San Bernardino",
+"Yucca Valley"
+]
+},
+"bot":{
+"name":"Keys",
+"avatar":"🔑",
+"teaser":{
+"en":"Locked out, lost your car keys, or need locks changed? I can help right now or get a locksmith on the way.",
+"es":"¿Se quedó afuera, perdió las llaves del carro o necesita cambiar chapas? Le ayudo ahora mismo o le mando un cerrajero."
+}
+},
+"emergency":{
+"available24x7":true,
+"responseText":{
+"en":"Locked out? Our on-call locksmith is available <b>24/7</b> for home, car and business lockouts across the Victor Valley.",
+"es":"¿Se quedó afuera? Nuestro cerrajero de guardia está disponible <b>24/7</b> para casas, carros y negocios en todo el Victor Valley."
+},
+"afterHoursFee":{
+"en":"Night, weekend and holiday calls carry an extra trip fee (example: $50–$100).",
+"es":"Las llamadas de noche, fin de semana o día festivo tienen un cargo extra (ejemplo: $50–$100)."
+},
+"callbackPromise":{
+"en":"the on-call locksmith will text you back within about 10 minutes",
+"es":"el cerrajero de guardia le enviará un mensaje en unos 10 minutos"
+},
+"patterns":[
+"locked out",
+"lock(ed)? myself out",
+"locked (my )?keys (in|inside)",
+"keys? (are |is )?(locked )?(in|inside) (the|my) (car|truck|house|office)",
+"can'?t get (in|inside)",
+"lost (all )?(my |the )?(car |house )?keys",
+"key (broke|snapped)",
+"broken key",
+"me quede afuera",
+"deje (las |mis )?llaves (adentro|dentro)",
+"perdi (las |mis )?llaves",
+"no puedo entrar",
+"se quebro la llave"
+]
+},
+"safety":[
+{
+"patterns":[
+"(baby|child|kid|toddler|infant|dog|pet|puppy|cat) (is )?(locked|stuck|trapped) in",
+"locked (my |the )?(baby|child|kid|toddler|infant|dog|pet|puppy) in",
+"break[- ]?in",
+"broke in",
+"someone (is )?(in|inside) my (house|home)",
+"intruder",
+"burglar\\w*",
+"robbed",
+"(nino|bebe|perro|mascota) (esta )?(encerrado|atrapado)",
+"se metieron a (robar|la casa)",
+"me robaron",
+"ladron\\w*"
+],
+"answer":{
+"en":"⚠️ <b>Safety first.</b><ol class='tc-ul'><li>If a <b>child or pet is locked in a car</b>, especially in the heat, <b>call 911 now</b>. Responders can get in faster than anyone.</li><li>If there's been a <b>break-in</b> or someone may still be inside, leave, go somewhere safe and <b>call 911</b>. Don't touch the damaged door or lock until police say it's OK.</li></ol>Once everyone is safe, call us at <a href='{phoneHref}'>{phone}</a> and we'll secure or rekey the door.",
+"es":"⚠️ <b>Primero la seguridad.</b><ol class='tc-ul'><li>Si un <b>niño o mascota quedó encerrado en un carro</b>, sobre todo con calor, <b>llame al 911 ahora</b>. Los rescatistas pueden abrir más rápido que nadie.</li><li>Si <b>se metieron a robar</b> o alguien podría seguir adentro, salga, vaya a un lugar seguro y <b>llame al 911</b>. No toque la puerta ni la chapa dañada hasta que la policía lo autorice.</li></ol>Cuando todos estén a salvo, llámenos al <a href='{phoneHref}'>{phone}</a> y aseguramos o cambiamos la combinación de la chapa."
+}
+}
+],
+"services":[
+{
+"id":"lockout",
+"icon":"🚪",
+"name":{
+"en":"Home & business lockouts",
+"es":"Aperturas de casas y negocios"
+},
+"desc":{
+"en":"Fast, damage-free entry when you're locked out of your home or business.",
+"es":"Apertura rápida y sin daños cuando se queda afuera de su casa o negocio."
+},
+"keywords":[
+"lockout",
+"lock out",
+"locked out",
+"open my door",
+"open the door",
+"get back in",
+"apertura",
+"abrir la puerta",
+"me quede afuera"
+],
+"tips":{
+"en":[
+"Check every other door, slider and the garage, only if it's safe to do so",
+"See if a roommate, family member or landlord has a spare",
+"Have your ID ready. We verify you live there before opening"
+],
+"es":[
+"Revise las otras puertas, la corrediza y el garage, solo si es seguro",
+"Pregunte si un familiar, compañero o el arrendador tiene una copia",
+"Tenga su identificación lista. Verificamos que usted vive ahí antes de abrir"
+]
+},
+"ask":"I'm locked out of my house"
+},
+{
+"id":"car",
+"icon":"🚗",
+"name":{
+"en":"Car keys, fobs & car lockouts",
+"es":"Llaves de carro, controles y aperturas"
+},
+"desc":{
+"en":"Car lockouts, lost-key replacement, transponder keys and key fob programming for most makes, often cheaper than the dealer.",
+"es":"Aperturas de carro, reposición de llaves perdidas, llaves con chip y programación de controles para la mayoría de marcas, muchas veces más barato que la agencia."
+},
+"keywords":[
+"car key",
+"car keys",
+"key fob",
+"fob",
+"transponder",
+"chip key",
+"push to start",
+"remote key",
+"car lockout",
+"locked in my car",
+"keys in the car",
+"ignition",
+"llave de carro",
+"llave del carro",
+"control del carro",
+"llave con chip",
+"switch"
+],
+"tips":{
+"en":[
+"Check for a spare at home or with family. Copying a spare is cheaper than making one from scratch",
+"Have your registration or title and ID ready so we can verify ownership",
+"Know your year, make and model (the VIN helps too)"
+],
+"es":[
+"Busque una copia en casa o con familiares. Copiar una llave cuesta menos que hacerla desde cero",
+"Tenga la tarjeta de circulación o el título y su identificación para verificar que es el dueño",
+"Tenga a la mano el año, marca y modelo (el VIN también ayuda)"
+]
+},
+"ask":"I lost my car keys"
+},
+{
+"id":"rekey",
+"icon":"🔁",
+"name":{
+"en":"Rekeying & lock changes",
+"es":"Cambio de combinación y de chapas"
+},
+"desc":{
+"en":"Rekey every lock to one new key after a move, lost keys or a roommate moving out.",
+"es":"Cambiamos la combinación de todas las chapas a una sola llave nueva después de una mudanza, llaves perdidas o un inquilino que se fue."
+},
+"keywords":[
+"rekey",
+"re-key",
+"rekeying",
+"change the locks",
+"change my locks",
+"new locks",
+"lock change",
+"just moved",
+"new house",
+"one key",
+"cambiar las chapas",
+"cambiar chapas",
+"cambiar combinacion",
+"cerraduras nuevas",
+"casa nueva"
+],
+"ask":"Can you rekey my house? I just moved in"
+},
+{
+"id":"install",
+"icon":"🔒",
+"name":{
+"en":"Deadbolts & smart locks",
+"es":"Cerrojos y chapas inteligentes"
+},
+"desc":{
+"en":"Deadbolts, keypad and smart locks (Schlage, Kwikset, Yale) installed and set up with your phone.",
+"es":"Instalamos cerrojos, chapas con teclado e inteligentes (Schlage, Kwikset, Yale) y las configuramos con su teléfono."
+},
+"keywords":[
+"deadbolt",
+"deadbolts",
+"smart lock",
+"keypad",
+"keyless",
+"schlage",
+"kwikset",
+"yale",
+"install a lock",
+"door lock",
+"lock",
+"locks",
+"cerrojo",
+"chapa",
+"chapas",
+"cerradura",
+"chapa inteligente",
+"teclado"
+],
+"tips":{
+"en":[
+"Try fresh batteries in a keypad or smart lock first",
+"A sticky lock often just needs dry graphite or a lock lubricant, not oil",
+"If the key turns but the bolt doesn't move, don't force it"
+],
+"es":[
+"Primero pruebe pilas nuevas en la chapa con teclado o inteligente",
+"Una chapa dura muchas veces solo necesita grafito o lubricante para chapas, no aceite",
+"Si la llave gira pero el cerrojo no se mueve, no la fuerce"
+]
+},
+"ask":"Do you install smart locks?"
+},
+{
+"id":"commercial",
+"icon":"🏢",
+"name":{
+"en":"Commercial locks & safes",
+"es":"Chapas comerciales y cajas fuertes"
+},
+"desc":{
+"en":"Master-key systems, panic bars, storefront locks, and safe opening and combination changes.",
+"es":"Sistemas de llave maestra, barras antipánico, chapas de local y apertura de cajas fuertes o cambio de combinación."
+},
+"keywords":[
+"commercial",
+"business",
+"storefront",
+"master key",
+"panic bar",
+"push bar",
+"safe",
+"safes",
+"combination",
+"comercial",
+"negocio",
+"llave maestra",
+"caja fuerte",
+"combinacion"
+],
+"ask":"Can you open a safe?"
+}
+],
+"pricing":{
+"disclaimer":{
+"en":"Example pricing for this demo only. A real business sets its own prices, and the exact price is confirmed before any work starts.",
+"es":"Precios de ejemplo solo para esta demostración. Cada negocio fija sus propios precios, y el precio exacto se confirma antes de empezar cualquier trabajo."
+},
+"items":[
+{
+"label":{
+"en":"Home lockout (business hours)",
+"es":"Apertura de casa (horario normal)"
+},
+"price":{
+"en":"$75–$125",
+"es":"$75–$125"
+},
+"keywords":[
+"lockout",
+"locked out",
+"house",
+"home",
+"apertura",
+"casa"
+]
+},
+{
+"label":{
+"en":"Car lockout",
+"es":"Apertura de carro"
+},
+"price":{
+"en":"$75–$135",
+"es":"$75–$135"
+},
+"keywords":[
+"car lockout",
+"car",
+"keys in",
+"carro"
+]
+},
+{
+"label":{
+"en":"Rekey",
+"es":"Cambio de combinación"
+},
+"price":{
+"en":"$49 service call + $20–$35 per lock",
+"es":"$49 visita + $20–$35 por chapa"
+},
+"keywords":[
+"rekey",
+"re-key",
+"change",
+"combinacion",
+"cambiar"
+]
+},
+{
+"label":{
+"en":"Deadbolt installed",
+"es":"Cerrojo instalado"
+},
+"price":{
+"en":"$120–$220 (with hardware)",
+"es":"$120–$220 (con material)"
+},
+"keywords":[
+"deadbolt",
+"lock",
+"cerrojo",
+"chapa"
+]
+},
+{
+"label":{
+"en":"Smart / keypad lock installed",
+"es":"Chapa inteligente / teclado instalada"
+},
+"price":{
+"en":"$95–$175 labor",
+"es":"$95–$175 mano de obra"
+},
+"keywords":[
+"smart",
+"keypad",
+"keyless",
+"inteligente",
+"teclado"
+]
+},
+{
+"label":{
+"en":"Car key / fob replacement",
+"es":"Reposición de llave / control de carro"
+},
+"price":{
+"en":"$150–$400 (depends on make)",
+"es":"$150–$400 (según la marca)"
+},
+"keywords":[
+"car key",
+"fob",
+"transponder",
+"key",
+"llave",
+"control"
+]
+},
+{
+"label":{
+"en":"Safe opening",
+"es":"Apertura de caja fuerte"
+},
+"price":{
+"en":"From $150 (quote by model)",
+"es":"Desde $150 (cotización según modelo)"
+},
+"keywords":[
+"safe",
+"caja fuerte"
+]
+}
+]
+},
+"financing":{
+"text":{
+"en":"Financing is available on larger commercial and access-control jobs for qualified buyers (on approved credit).",
+"es":"Hay financiamiento para trabajos comerciales y de control de acceso grandes para clientes que califiquen (sujeto a aprobación de crédito)."
+},
+"partner":"[Financing partner placeholder — the client's real lender goes here]",
+"link":""
+},
+"maintenancePlan":{
+"name":"Key Care Plan",
+"price":{
+"en":"$59/year (example)",
+"es":"$59 al año (ejemplo)"
+},
+"perks":{
+"en":[
+"Priority lockout response",
+"Yearly lock check and lubrication (up to 4 doors)",
+"No trip fee on scheduled visits",
+"10% off rekeys and new locks"
+],
+"es":[
+"Prioridad en aperturas",
+"Revisión y lubricación anual de chapas (hasta 4 puertas)",
+"Sin cargo de visita en citas programadas",
+"10% de descuento en combinaciones y chapas nuevas"
+]
+},
+"pitch":{
+"en":"Wind-blown dust wears out locks fast in the desert. A yearly check keeps keys turning smoothly, and you jump the line if you're ever locked out.",
+"es":"El polvo del desierto desgasta las chapas rápido. Una revisión anual mantiene las llaves girando bien, y si se queda afuera, tiene prioridad."
+}
+},
+"issueChips":{
+"en":[
+"I'm locked out",
+"Lost car keys",
+"Rekey my house",
+"Install a smart lock",
+"Business locks"
+],
+"es":[
+"Me quedé afuera",
+"Perdí las llaves del carro",
+"Cambiar combinación",
+"Instalar chapa inteligente",
+"Chapas de negocio"
+]
+},
+"faqs":[
+{
+"id":"license",
+"q":"Are you a licensed locksmith?",
+"patterns":[
+"licensed",
+"license",
+"insured",
+"insurance",
+"bonded",
+"bsis",
+"licencia",
+"licenciado",
+"asegurado"
+],
+"answer":{
+"en":"Yes. California requires locksmith companies to be licensed by the Bureau of Security and Investigative Services, and we are, plus bonded and insured.<br><small>{license}</small>",
+"es":"Sí. California exige que los cerrajeros tengan licencia del Bureau of Security and Investigative Services, y la tenemos, además de fianza y seguro.<br><small>{license}</small>"
+}
+},
+{
+"id":"id",
+"q":"Do I need to show ID?",
+"patterns":[
+"id",
+"photo id",
+"identification",
+"proof",
+"prove",
+"verify",
+"identificacion",
+"comprobante",
+"demostrar"
+],
+"answer":{
+"en":"Yes. Before opening a home or car we verify it's yours, with a photo ID showing the address or the vehicle registration. It protects you too.",
+"es":"Sí. Antes de abrir una casa o carro verificamos que es suyo, con una identificación con la dirección o la tarjeta de circulación. Es para su protección."
+}
+},
+{
+"id":"howfast",
+"q":"How fast can you get here?",
+"patterns":[
+"how fast",
+"how soon",
+"how long (until|till|to get|for you)",
+"eta",
+"que tan rapido",
+"cuanto tardan en llegar",
+"en cuanto llegan"
+],
+"answer":{
+"en":"For lockouts we usually arrive in <b>30–60 minutes</b> anywhere in our service area, 24/7 (example). Scheduled work like rekeys can often be same day.",
+"es":"En aperturas normalmente llegamos en <b>30 a 60 minutos</b> en toda nuestra área, 24/7 (ejemplo). Los trabajos programados como cambios de combinación muchas veces son el mismo día."
+}
+},
+{
+"id":"rekeyvsreplace",
+"q":"Should I rekey or replace my locks?",
+"patterns":[
+"rekey or replace",
+"replace or rekey",
+"rekey vs",
+"difference between rekey",
+"cambiar o",
+"que es mejor"
+],
+"answer":{
+"en":"If your locks work fine, <b>rekeying</b> is cheaper: we change the pins so old keys stop working. Replace when locks are worn, damaged, or you want an upgrade like a smart lock.",
+"es":"Si sus chapas funcionan bien, <b>cambiar la combinación</b> cuesta menos: cambiamos los pernos y las llaves viejas dejan de funcionar. Cámbielas si están gastadas, dañadas o quiere algo mejor, como una chapa inteligente."
+}
+},
+{
+"id":"nokey",
+"q":"Can you make a car key without the original?",
+"patterns":[
+"without (the |a )?(original|key)",
+"no key",
+"all keys lost",
+"lost all",
+"sin la llave",
+"sin llave",
+"sin la original"
+],
+"answer":{
+"en":"Yes, for most makes and models. We cut and program a new key on site, usually for less than the dealer and without a tow.",
+"es":"Sí, para la mayoría de marcas y modelos. Cortamos y programamos una llave nueva en el lugar, normalmente por menos que la agencia y sin grúa."
+}
+},
+{
+"id":"warranty",
+"q":"Do you guarantee your work?",
+"patterns":[
+"warranty",
+"guarantee",
+"guaranteed",
+"garantia"
+],
+"answer":{
+"en":"Labor is guaranteed for <b>1 year</b>, and new locks carry the manufacturer's warranty (example terms).",
+"es":"La mano de obra tiene garantía de <b>1 año</b>, y las chapas nuevas la garantía del fabricante (términos de ejemplo)."
+}
+},
+{
+"id":"payment",
+"patterns":[
+"pay with",
+"credit card",
+"cash",
+"check",
+"venmo",
+"zelle",
+"payment methods",
+"accept cards",
+"tarjeta",
+"efectivo",
+"formas de pago",
+"aceptan"
+],
+"answer":{
+"en":"We accept all major credit cards, debit, cash, check and Zelle. Financing is available on bigger jobs.",
+"es":"Aceptamos tarjetas de crédito y débito, efectivo, cheque y Zelle. Hay financiamiento para trabajos más grandes."
+}
+},
+{
+"id":"discounts",
+"patterns":[
+"discount",
+"military",
+"veteran",
+"senior",
+"coupon",
+"deal",
+"special",
+"promo",
+"descuento",
+"militar",
+"veterano",
+"cupon",
+"oferta"
+],
+"answer":{
+"en":"We offer <b>10% off for seniors, military, veterans and first responders</b> (example offer).",
+"es":"Ofrecemos <b>10% de descuento para personas mayores, militares, veteranos y personal de emergencia</b> (oferta de ejemplo)."
+}
+},
+{
+"id":"reviews",
+"patterns":[
+"reviews",
+"rating",
+"ratings",
+"testimonials",
+"yelp",
+"google reviews",
+"resenas",
+"opiniones",
+"calificaciones"
+],
+"answer":{
+"en":"Customers rate us highly for showing up on time and explaining options clearly. (On a real site, this links to the Google Business Profile.)",
+"es":"Nuestros clientes nos califican muy bien por llegar a tiempo y explicar las opciones claramente. (En un sitio real, esto enlaza al perfil de Google.)"
+}
+}
+],
+"site":{
+"headline":"Locked out? A local locksmith on the way, 24/7",
+"lead":"Home, car and business lockouts, car keys and fobs, rekeys and smart locks. Licensed locksmiths across the High Desert, day or night.",
+"trust":[
+"<b>★ 4.9</b> sample rating",
+"✔ Licensed &amp; bonded",
+"⚡ 24/7 lockouts",
+"🚗 Car keys &amp; fobs"
+],
+"badge":"🔑 30-min arrival",
+"promo":{
+"text":"🏠 <b>Just moved?</b> Rekey up to 3 locks for $99 <small>(example offer)</small>",
+"ask":"How much does it cost to rekey my house?"
+},
+"why":[
+[
+"⏱ Fast arrival",
+"Lockout calls answered 24/7, usually on site in 30–60 minutes (example)."
+],
+[
+"💵 Price before we start",
+"You get the full price on the phone. No surprise fees at the door."
+],
+[
+"🪪 Licensed &amp; verified",
+"Licensed locksmiths who verify ownership before opening anything."
+],
+[
+"🛡 Guaranteed",
+"1-year labor guarantee on every job (demo terms)."
+]
+],
+"reviews":[
+[
+"Locked my keys in the truck at 11 PM. They were there in 35 minutes.",
+"R. V., Hesperia"
+],
+[
+"Lost my only Honda key. They made a new one in my driveway for way less than the dealer.",
+"A. N., Victorville"
+],
+[
+"Rekeyed our whole house the day we closed escrow.",
+"C. & J. L., Apple Valley"
+]
+],
+"ctaBand":{
+"h":"Locked out? Don't wait on hold.",
+"p":"{bot} answers questions and gets a locksmith on the way 24/7."
+}
+}
+},
+"appliance":{
+"trade":"appliance",
+"label":"Appliance repair",
+"business":{
+"name":"Bell Mountain Appliance Repair (Demo)",
+"shortName":"Bell Mountain Appliance",
+"phone":"(760) 555-0136",
+"phoneHref":"tel:+17605550136",
+"email":"service@bellmountainappliance.example",
+"license":"CA Appliance Repair Dealer Reg. #000000 (demo placeholder)",
+"timezone":"America/Los_Angeles"
+},
+"theme":{
+"brand":"#1e3a5f",
+"accent":"#0e7490"
+},
+"hours":{
+"0":null,
+"1":[
+7,
+18
+],
+"2":[
+7,
+18
+],
+"3":[
+7,
+18
+],
+"4":[
+7,
+18
+],
+"5":[
+7,
+18
+],
+"6":[
+8,
+14
+]
+},
+"hoursText":{
+"en":"Mon–Fri 7 AM–6 PM · Sat 8 AM–2 PM · Sun closed",
+"es":"Lun–Vie 7 AM–6 PM · Sáb 8 AM–2 PM · Dom cerrado"
+},
+"serviceArea":{
+"summary":{
+"en":"the Victor Valley / High Desert",
+"es":"el Victor Valley / High Desert"
+},
+"cities":[
+"Apple Valley",
+"Victorville",
+"Hesperia",
+"Adelanto",
+"Spring Valley Lake",
+"Lucerne Valley",
+"Phelan",
+"Oak Hills",
+"Piñon Hills",
+"Helendale"
+],
+"zips":{
+"92307":"Apple Valley",
+"92308":"Apple Valley",
+"92392":"Victorville",
+"92394":"Victorville",
+"92395":"Victorville",
+"92344":"Hesperia/Oak Hills",
+"92345":"Hesperia",
+"92340":"Hesperia",
+"92301":"Adelanto",
+"92356":"Lucerne Valley",
+"92371":"Phelan",
+"92372":"Piñon Hills",
+"92342":"Helendale"
+},
+"nearbyNotCovered":[
+"Barstow",
+"Lancaster",
+"Palmdale",
+"Big Bear",
+"Wrightwood",
+"San Bernardino",
+"Yucca Valley"
+]
+},
+"bot":{
+"name":"Spin",
+"avatar":"🔌",
+"teaser":{
+"en":"Washer, dryer, fridge or oven acting up? I can help troubleshoot or get a repair tech scheduled.",
+"es":"¿Su lavadora, secadora, refrigerador u horno falla? Le ayudo a revisarlo o le agendo un técnico."
+}
+},
+"emergency":{
+"available24x7":false,
+"responseText":{
+"en":"We don't run a 24/7 emergency line, but leave your info and we'll call you first thing during business hours. If you smell gas, leave the house and call your gas company or 911 from outside. If the fridge quit, keep the doors closed: food stays cold about 4 hours (a full freezer about 48).",
+"es":"No tenemos línea de emergencias 24/7, pero deje sus datos y le llamamos a primera hora en horario de oficina. Si huele a gas, salga de la casa y llame a la compañía de gas o al 911 desde afuera. Si el refrigerador dejó de enfriar, mantenga las puertas cerradas: la comida se conserva fría unas 4 horas (un congelador lleno unas 48)."
+},
+"afterHoursFee":{
+"en":"",
+"es":""
+},
+"callbackPromise":{
+"en":"we'll call you first thing in the morning",
+"es":"le llamaremos a primera hora de la mañana"
+},
+"patterns":[]
+},
+"safety":[
+{
+"patterns":[
+"smell(s|ing)? (like )?gas",
+"gas smell",
+"gas leak",
+"rotten eggs?",
+"sparks?",
+"sparking",
+"smoke",
+"smoking",
+"burning smell",
+"smell(s|ing)? (like )?burning",
+"fire",
+"flames?",
+"shock(ed)?",
+"olor a gas",
+"huele a gas",
+"fuga de gas",
+"chispas",
+"humo",
+"olor a quemado",
+"huele a quemado",
+"fuego",
+"llamas",
+"me dio toques",
+"toques"
+],
+"answer":{
+"en":"⚠️ <b>Safety first.</b><ol class='tc-ul'><li><b>Smell gas?</b> Leave the house now. Don't flip switches or use the stove, then call your gas company or <b>911</b> from outside.</li><li><b>Smoke, sparks or a burning smell?</b> If it's safe, turn the appliance off at the breaker and unplug it. If there's fire, get out and <b>call 911</b>.</li><li>Don't use the appliance again until it's been checked.</li></ol>Then call us at <a href='{phoneHref}'>{phone}</a>.",
+"es":"⚠️ <b>Primero la seguridad.</b><ol class='tc-ul'><li><b>¿Huele a gas?</b> Salga de la casa ya. No prenda interruptores ni la estufa, y llame a la compañía de gas o al <b>911</b> desde afuera.</li><li><b>¿Humo, chispas u olor a quemado?</b> Si es seguro, apague el aparato en el breaker y desconéctelo. Si hay fuego, salga y <b>llame al 911</b>.</li><li>No vuelva a usar el aparato hasta que lo revisen.</li></ol>Luego llámenos al <a href='{phoneHref}'>{phone}</a>."
+}
+}
+],
+"services":[
+{
+"id":"washer",
+"icon":"🧺",
+"name":{
+"en":"Washer repair",
+"es":"Reparación de lavadoras"
+},
+"desc":{
+"en":"Top-load and front-load washers that won't drain, spin, fill or stop leaking.",
+"es":"Lavadoras de carga superior y frontal que no desaguan, no centrifugan, no llenan o gotean."
+},
+"keywords":[
+"washer",
+"washing machine",
+"front load",
+"front loader",
+"top load",
+"won't spin",
+"lavadora",
+"no centrifuga",
+"no exprime"
+],
+"tips":{
+"en":[
+"Check the drain hose behind the washer for kinks",
+"Front-loaders have a small drain-pump filter behind a panel at the bottom front. Cleaning it fixes many no-drain problems (have towels ready)",
+"Unbalanced loads can stop the spin. Redistribute and try again"
+],
+"es":[
+"Revise que la manguera de desagüe atrás no esté doblada",
+"Las de carga frontal tienen un filtro de la bomba detrás de una tapita abajo al frente. Limpiarlo arregla muchos problemas de desagüe (tenga toallas listas)",
+"Una carga desbalanceada detiene el centrifugado. Acomódela y pruebe otra vez"
+]
+},
+"ask":"My washer won't drain"
+},
+{
+"id":"dryer",
+"icon":"🌀",
+"name":{
+"en":"Dryer repair & vent cleaning",
+"es":"Reparación de secadoras y limpieza de ductos"
+},
+"desc":{
+"en":"Gas and electric dryers that won't heat, tumble or shut off, plus dryer vent cleaning to cut fire risk.",
+"es":"Secadoras de gas y eléctricas que no calientan, no giran o no se apagan, y limpieza de ductos para reducir el riesgo de incendio."
+},
+"keywords":[
+"dryer",
+"dryer vent",
+"vent cleaning",
+"clothes dryer",
+"not drying",
+"secadora",
+"ducto de la secadora",
+"no seca"
+],
+"tips":{
+"en":[
+"Clean the lint screen and check the vent hose behind the dryer isn't crushed",
+"Electric dryers use a double breaker. If one half tripped, it may tumble but not heat",
+"Clothes taking two cycles to dry often means a clogged vent, which is also a fire risk"
+],
+"es":[
+"Limpie el filtro de pelusa y revise que la manguera del ducto atrás no esté aplastada",
+"Las secadoras eléctricas usan un breaker doble. Si se botó una mitad, puede girar sin calentar",
+"Si la ropa tarda dos ciclos en secar, el ducto puede estar tapado, lo cual también es riesgo de incendio"
+]
+},
+"ask":"My dryer isn't heating"
+},
+{
+"id":"fridge",
+"icon":"🧊",
+"name":{
+"en":"Refrigerator & freezer repair",
+"es":"Reparación de refrigeradores y congeladores"
+},
+"desc":{
+"en":"Fridges and freezers that aren't cooling, are leaking, icing up, or have a broken ice maker.",
+"es":"Refrigeradores y congeladores que no enfrían, gotean, se escarchan o con la máquina de hielo descompuesta."
+},
+"keywords":[
+"fridge",
+"refrigerator",
+"freezer",
+"ice maker",
+"not cooling",
+"warm fridge",
+"refrigerador",
+"refri",
+"nevera",
+"congelador",
+"hielera",
+"maquina de hielo",
+"no enfria"
+],
+"tips":{
+"en":[
+"Check the temperature setting (about 37°F fridge, 0°F freezer)",
+"Make sure the vents inside aren't blocked by food",
+"Vacuum the condenser coils (behind or under the fridge). Desert dust clogs them fast",
+"Keep the doors closed to hold the cold while you wait"
+],
+"es":[
+"Revise la temperatura (unos 37°F el refri, 0°F el congelador)",
+"Asegúrese de que la comida no tape las rejillas de adentro",
+"Aspire los serpentines del condensador (atrás o abajo). El polvo del desierto los tapa rápido",
+"Mantenga las puertas cerradas para conservar el frío mientras espera"
+]
+},
+"ask":"My fridge isn't cooling"
+},
+{
+"id":"oven",
+"icon":"🍳",
+"name":{
+"en":"Oven, range & cooktop repair",
+"es":"Reparación de hornos y estufas"
+},
+"desc":{
+"en":"Gas and electric ovens, ranges and cooktops that won't heat, ignite or hold temperature.",
+"es":"Hornos, estufas y parrillas de gas y eléctricas que no calientan, no prenden o no mantienen la temperatura."
+},
+"keywords":[
+"oven",
+"range",
+"stove",
+"cooktop",
+"burner",
+"burners",
+"igniter",
+"won't ignite",
+"horno",
+"estufa",
+"parrilla",
+"quemador",
+"quemadores"
+],
+"tips":{
+"en":[
+"Electric: check the breaker, and look for a bake element that's visibly broken or blistered",
+"Gas: if a burner clicks but won't light, make sure the burner cap is seated and dry",
+"If you smell gas, stop and leave the house"
+],
+"es":[
+"Eléctrica: revise el breaker y si la resistencia de abajo se ve rota o con ampollas",
+"Gas: si el quemador hace clic pero no prende, revise que la tapa esté bien puesta y seca",
+"Si huele a gas, deténgase y salga de la casa"
+]
+},
+"ask":"My oven won't heat up"
+},
+{
+"id":"dishwasher",
+"icon":"🍽️",
+"name":{
+"en":"Dishwasher repair",
+"es":"Reparación de lavaplatos"
+},
+"desc":{
+"en":"Dishwashers that won't drain, clean, start or stop leaking.",
+"es":"Lavaplatos que no desaguan, no lavan bien, no arrancan o gotean."
+},
+"keywords":[
+"dishwasher",
+"dish washer",
+"lavaplatos",
+"lavavajillas",
+"lava trastes",
+"lavatrastes"
+],
+"tips":{
+"en":[
+"Clean the filter at the bottom of the tub",
+"If it won't drain, run the garbage disposal first (they often share a drain)",
+"Make sure the door latches fully"
+],
+"es":[
+"Limpie el filtro del fondo",
+"Si no desagua, prenda primero el triturador (muchas veces comparten el desagüe)",
+"Revise que la puerta cierre bien"
+]
+},
+"ask":"My dishwasher won't drain"
+}
+],
+"pricing":{
+"disclaimer":{
+"en":"Example pricing for this demo only. A real business sets its own prices, and the exact price is confirmed before any work starts.",
+"es":"Precios de ejemplo solo para esta demostración. Cada negocio fija sus propios precios, y el precio exacto se confirma antes de empezar cualquier trabajo."
+},
+"items":[
+{
+"label":{
+"en":"Diagnostic service call",
+"es":"Visita de diagnóstico"
+},
+"price":{
+"en":"$89 (applied to the repair)",
+"es":"$89 (se abona a la reparación)"
+},
+"keywords":[
+"diagnostic",
+"service call",
+"come out",
+"visit",
+"diagnostico",
+"visita"
+]
+},
+{
+"label":{
+"en":"Washer repair (typical)",
+"es":"Reparación de lavadora (típica)"
+},
+"price":{
+"en":"$150–$350",
+"es":"$150–$350"
+},
+"keywords":[
+"washer",
+"washing",
+"lavadora"
+]
+},
+{
+"label":{
+"en":"Dryer repair (typical)",
+"es":"Reparación de secadora (típica)"
+},
+"price":{
+"en":"$150–$325",
+"es":"$150–$325"
+},
+"keywords":[
+"dryer",
+"secadora"
+]
+},
+{
+"label":{
+"en":"Refrigerator repair (typical)",
+"es":"Reparación de refrigerador (típica)"
+},
+"price":{
+"en":"$200–$450",
+"es":"$200–$450"
+},
+"keywords":[
+"fridge",
+"refrigerator",
+"freezer",
+"ice maker",
+"refri",
+"refrigerador",
+"congelador"
+]
+},
+{
+"label":{
+"en":"Oven / range repair (typical)",
+"es":"Reparación de horno / estufa (típica)"
+},
+"price":{
+"en":"$150–$400",
+"es":"$150–$400"
+},
+"keywords":[
+"oven",
+"range",
+"stove",
+"cooktop",
+"horno",
+"estufa"
+]
+},
+{
+"label":{
+"en":"Dishwasher repair (typical)",
+"es":"Reparación de lavaplatos (típica)"
+},
+"price":{
+"en":"$150–$300",
+"es":"$150–$300"
+},
+"keywords":[
+"dishwasher",
+"lavaplatos",
+"lavavajillas"
+]
+},
+{
+"label":{
+"en":"Dryer vent cleaning",
+"es":"Limpieza de ducto de secadora"
+},
+"price":{
+"en":"$129–$179",
+"es":"$129–$179"
+},
+"keywords":[
+"vent",
+"ducto"
+]
+}
+]
+},
+"financing":{
+"text":{
+"en":"Financing is available on larger repairs for qualified buyers (on approved credit).",
+"es":"Hay financiamiento para reparaciones grandes para clientes que califiquen (sujeto a aprobación de crédito)."
+},
+"partner":"[Financing partner placeholder — the client's real lender goes here]",
+"link":""
+},
+"maintenancePlan":{
+"name":"Appliance Care Plan",
+"price":{
+"en":"$12/month (example)",
+"es":"$12 al mes (ejemplo)"
+},
+"perks":{
+"en":[
+"Yearly checkup on up to 4 appliances",
+"Free dryer vent cleaning each year",
+"No diagnostic fee on repairs",
+"10% off parts and labor"
+],
+"es":[
+"Revisión anual de hasta 4 aparatos",
+"Limpieza gratis del ducto de la secadora cada año",
+"Sin cargo de diagnóstico en reparaciones",
+"10% de descuento en piezas y mano de obra"
+]
+},
+"pitch":{
+"en":"Desert dust clogs fridge coils and dryer vents, which makes appliances work harder and fail sooner. A yearly checkup catches problems early.",
+"es":"El polvo del desierto tapa los serpentines del refri y los ductos de la secadora, y los aparatos trabajan más y fallan antes. Una revisión anual detecta problemas a tiempo."
+}
+},
+"issueChips":{
+"en":[
+"Washer won't drain",
+"Dryer not heating",
+"Fridge not cooling",
+"Oven won't heat",
+"Dishwasher problem"
+],
+"es":[
+"La lavadora no desagua",
+"La secadora no calienta",
+"El refri no enfría",
+"El horno no calienta",
+"Problema con el lavaplatos"
+]
+},
+"faqs":[
+{
+"id":"license",
+"q":"Are you licensed and insured?",
+"patterns":[
+"licensed",
+"license",
+"insured",
+"insurance",
+"bonded",
+"registered",
+"licencia",
+"licenciado",
+"asegurado"
+],
+"answer":{
+"en":"Yes. We're registered with the state as an appliance repair dealer, and fully insured.<br><small>{license}</small>",
+"es":"Sí. Estamos registrados ante el estado como taller de reparación de aparatos, y tenemos seguro.<br><small>{license}</small>"
+}
+},
+{
+"id":"brands",
+"q":"What brands do you repair?",
+"patterns":[
+"brand",
+"brands",
+"whirlpool",
+"samsung",
+"lg",
+"ge",
+"maytag",
+"frigidaire",
+"kenmore",
+"bosch",
+"kitchenaid",
+"amana",
+"marca",
+"marcas"
+],
+"answer":{
+"en":"We repair <b>most major home brands</b>, including Whirlpool, GE, Samsung, LG, Maytag, Frigidaire, Kenmore, KitchenAid, Bosch and Amana. We don't service commercial kitchen equipment.",
+"es":"Reparamos <b>la mayoría de las marcas para el hogar</b>: Whirlpool, GE, Samsung, LG, Maytag, Frigidaire, Kenmore, KitchenAid, Bosch y Amana. No damos servicio a equipo de cocina comercial."
+}
+},
+{
+"id":"repairorreplace",
+"q":"Is it worth repairing or should I replace it?",
+"patterns":[
+"worth (it|fixing|repairing)",
+"repair or replace",
+"replace or repair",
+"buy a new",
+"new one",
+"vale la pena",
+"comprar (uno|una) nuev"
+],
+"answer":{
+"en":"A good rule: if the repair costs more than about <b>half the price of a new one</b>, or the appliance is past its typical life (about 10–13 years for most), replacing usually makes sense. Our tech will give you an honest take.",
+"es":"Una buena regla: si la reparación cuesta más de <b>la mitad de uno nuevo</b>, o el aparato ya pasó su vida típica (unos 10 a 13 años), conviene cambiarlo. Nuestro técnico le dará una opinión honesta."
+}
+},
+{
+"id":"sameday",
+"q":"Can you come today?",
+"patterns":[
+"today",
+"same day",
+"tomorrow",
+"hoy",
+"mismo dia",
+"manana"
+],
+"answer":{
+"en":"Often, yes. We keep slots open for <b>same-day and next-day</b> repairs, and most common parts are on the truck. Book below and we'll confirm the soonest time.",
+"es":"Muchas veces sí. Guardamos espacios para reparaciones <b>el mismo día o al día siguiente</b>, y llevamos las piezas más comunes. Agende y le confirmamos la hora más pronta."
+}
+},
+{
+"id":"warranty",
+"q":"Do you guarantee your repairs?",
+"patterns":[
+"warranty",
+"guarantee",
+"guaranteed",
+"garantia"
+],
+"answer":{
+"en":"Repairs come with a <b>90-day parts &amp; labor guarantee</b> (example terms). Still under the manufacturer's warranty? Check with them first, since they may cover it.",
+"es":"Las reparaciones tienen <b>90 días de garantía en piezas y mano de obra</b> (términos de ejemplo). ¿Su aparato aún tiene garantía del fabricante? Consúltelos primero, quizá lo cubren."
+}
+},
+{
+"id":"diagfee",
+"q":"Is there a diagnostic fee?",
+"patterns":[
+"diagnostic fee",
+"trip fee",
+"service fee",
+"charge to come out",
+"cargo de diagnostico",
+"cobran por venir",
+"cobran la visita"
+],
+"answer":{
+"en":"Yes, <b>$89</b> (example), and it's <b>applied to the repair</b> if you go ahead.",
+"es":"Sí, <b>$89</b> (ejemplo), y <b>se abona a la reparación</b> si decide hacerla."
+}
+},
+{
+"id":"payment",
+"patterns":[
+"pay with",
+"credit card",
+"cash",
+"check",
+"venmo",
+"zelle",
+"payment methods",
+"accept cards",
+"tarjeta",
+"efectivo",
+"formas de pago",
+"aceptan"
+],
+"answer":{
+"en":"We accept all major credit cards, debit, cash, check and Zelle. Financing is available on bigger jobs.",
+"es":"Aceptamos tarjetas de crédito y débito, efectivo, cheque y Zelle. Hay financiamiento para trabajos más grandes."
+}
+},
+{
+"id":"discounts",
+"patterns":[
+"discount",
+"military",
+"veteran",
+"senior",
+"coupon",
+"deal",
+"special",
+"promo",
+"descuento",
+"militar",
+"veterano",
+"cupon",
+"oferta"
+],
+"answer":{
+"en":"We offer <b>10% off for seniors, military, veterans and first responders</b> (example offer).",
+"es":"Ofrecemos <b>10% de descuento para personas mayores, militares, veteranos y personal de emergencia</b> (oferta de ejemplo)."
+}
+},
+{
+"id":"reviews",
+"patterns":[
+"reviews",
+"rating",
+"ratings",
+"testimonials",
+"yelp",
+"google reviews",
+"resenas",
+"opiniones",
+"calificaciones"
+],
+"answer":{
+"en":"Customers rate us highly for showing up on time and explaining options clearly. (On a real site, this links to the Google Business Profile.)",
+"es":"Nuestros clientes nos califican muy bien por llegar a tiempo y explicar las opciones claramente. (En un sitio real, esto enlaza al perfil de Google.)"
+}
+}
+],
+"site":{
+"headline":"Washer, dryer, fridge or oven down? Fast repair across the High Desert",
+"lead":"Same-day and next-day appliance repair for most major brands, with common parts on the truck and the diagnostic fee applied to your repair.",
+"trust":[
+"<b>★ 4.9</b> sample rating",
+"✔ Registered &amp; insured",
+"🚚 Parts on the truck",
+"📅 Same/next-day slots"
+],
+"badge":"🧊 Cold again",
+"promo":{
+"text":"🌀 <b>Dryer taking forever?</b> Vent cleaning from $129 <small>(example price)</small>",
+"ask":"How much is dryer vent cleaning?"
+},
+"why":[
+[
+"⏱ On-time windows",
+"2-hour arrival windows, and a text when we're on the way."
+],
+[
+"💵 Upfront pricing",
+"You approve the price before any work starts."
+],
+[
+"🧰 Local pros",
+"Trained, background-checked, and live right here in the Victor Valley."
+],
+[
+"🛡 Guaranteed",
+"Workmanship guarantee on every job (demo terms)."
+]
+],
+"reviews":[
+[
+"Fridge died on a 105° day. Booked through the chat and they had it cold again the next morning.",
+"M. T., Apple Valley"
+],
+[
+"Honest. Told me my 14-year-old washer wasn't worth fixing and didn't charge for the visit beyond the diagnostic.",
+"G. H., Hesperia"
+],
+[
+"The dryer vent was packed solid. Clothes dry in one cycle now.",
+"L. B., Victorville"
+]
+],
+"ctaBand":{
+"h":"Appliance down? Don't wait on hold.",
+"p":"{bot} answers questions and takes your repair request in about a minute."
+}
+}
+},
+"masonry":{
+"trade":"masonry",
+"label":"Masonry & concrete",
+"business":{
+"name":"Adobe Ridge Masonry & Concrete (Demo)",
+"shortName":"Adobe Ridge Masonry",
+"phone":"(760) 555-0177",
+"phoneHref":"tel:+17605550177",
+"email":"service@adoberidgemasonry.example",
+"license":"CA Lic. #000000 · C-8 Concrete / C-29 Masonry (demo placeholder)",
+"timezone":"America/Los_Angeles"
+},
+"theme":{
+"brand":"#44403c",
+"accent":"#9a3412"
+},
+"hours":{
+"0":null,
+"1":[
+7,
+17
+],
+"2":[
+7,
+17
+],
+"3":[
+7,
+17
+],
+"4":[
+7,
+17
+],
+"5":[
+7,
+17
+],
+"6":[
+8,
+12
+]
+},
+"hoursText":{
+"en":"Mon–Fri 7 AM–5 PM · Sat 8 AM–12 PM · Sun closed",
+"es":"Lun–Vie 7 AM–5 PM · Sáb 8 AM–12 PM · Dom cerrado"
+},
+"serviceArea":{
+"summary":{
+"en":"the Victor Valley / High Desert",
+"es":"el Victor Valley / High Desert"
+},
+"cities":[
+"Apple Valley",
+"Victorville",
+"Hesperia",
+"Adelanto",
+"Spring Valley Lake",
+"Lucerne Valley",
+"Phelan",
+"Oak Hills",
+"Piñon Hills",
+"Helendale"
+],
+"zips":{
+"92307":"Apple Valley",
+"92308":"Apple Valley",
+"92392":"Victorville",
+"92394":"Victorville",
+"92395":"Victorville",
+"92344":"Hesperia/Oak Hills",
+"92345":"Hesperia",
+"92340":"Hesperia",
+"92301":"Adelanto",
+"92356":"Lucerne Valley",
+"92371":"Phelan",
+"92372":"Piñon Hills",
+"92342":"Helendale"
+},
+"nearbyNotCovered":[
+"Barstow",
+"Lancaster",
+"Palmdale",
+"Big Bear",
+"Wrightwood",
+"San Bernardino",
+"Yucca Valley"
+]
+},
+"bot":{
+"name":"Brick",
+"avatar":"🧱",
+"teaser":{
+"en":"Planning a driveway, patio, block wall or stucco repair? Ask me about pricing or set up a free estimate.",
+"es":"¿Piensa en una entrada, patio, barda de block o reparación de estuco? Pregúnteme precios o agende un presupuesto gratis."
+}
+},
+"emergency":{
+"available24x7":false,
+"responseText":{
+"en":"We don't run a 24/7 emergency line, but leave your info and we'll call you first thing during business hours. If a wall has fallen or is leaning badly, keep everyone away from it. If it hit a gas meter, power line or a person, call 911.",
+"es":"No tenemos línea de emergencias 24/7, pero deje sus datos y le llamamos a primera hora en horario de oficina. Si una barda se cayó o está muy inclinada, mantenga a todos lejos. Si golpeó un medidor de gas, cables de luz o a una persona, llame al 911."
+},
+"afterHoursFee":{
+"en":"",
+"es":""
+},
+"callbackPromise":{
+"en":"we'll call you first thing in the morning",
+"es":"le llamaremos a primera hora de la mañana"
+},
+"patterns":[]
+},
+"safety":[
+{
+"patterns":[
+"wall (fell|collapsed|came down|is falling|is leaning|leaning)",
+"(fell|collapsed) (on|onto)",
+"leaning wall",
+"about to fall",
+"fell on (my )?(car|kid|child|someone|dog)",
+"hit (the )?gas meter",
+"la barda se cayo",
+"se cayo la barda",
+"barda (inclinada|chueca)",
+"se va a caer",
+"se derrumbo"
+],
+"answer":{
+"en":"⚠️ <b>Safety first.</b> A block wall section can weigh thousands of pounds.<ol class='tc-ul'><li><b>Keep everyone, especially kids and pets, away</b> from a leaning or damaged wall, and don't lean anything against it.</li><li>Turn off sprinklers that soak the base.</li><li>If it fell on a person, a gas meter or power lines, <b>call 911</b>.</li></ol>Then call us at <a href='{phoneHref}'>{phone}</a> and we'll come assess it.",
+"es":"⚠️ <b>Primero la seguridad.</b> Una sección de barda de block puede pesar miles de libras.<ol class='tc-ul'><li><b>Mantenga a todos lejos, sobre todo niños y mascotas,</b> de una barda inclinada o dañada, y no recargue nada en ella.</li><li>Apague los aspersores que mojan la base.</li><li>Si cayó sobre una persona, un medidor de gas o cables de luz, <b>llame al 911</b>.</li></ol>Luego llámenos al <a href='{phoneHref}'>{phone}</a> y vamos a revisarla."
+}
+}
+],
+"services":[
+{
+"id":"driveway",
+"icon":"🚗",
+"name":{
+"en":"Concrete driveways & walkways",
+"es":"Entradas y banquetas de concreto"
+},
+"desc":{
+"en":"New driveways, replacements, extensions, RV pads and walkways, poured and finished to last in desert heat.",
+"es":"Entradas nuevas, reemplazos, ampliaciones, losas para RV y banquetas, coladas y terminadas para durar con el calor del desierto."
+},
+"keywords":[
+"driveway",
+"driveways",
+"walkway",
+"sidewalk",
+"rv pad",
+"rv parking",
+"concrete",
+"slab",
+"pour",
+"entrada",
+"cochera",
+"banqueta",
+"concreto",
+"losa",
+"colar"
+],
+"tips":{
+"en":[
+"Hairline cracks are normal as concrete shrinks and usually just cosmetic",
+"Cracks wider than about 1/4 inch, or slabs that have sunk or lifted, are worth having us look at",
+"Keep sprinklers and downspouts from soaking the edges"
+],
+"es":[
+"Las grietas muy finas son normales al encogerse el concreto y casi siempre son estéticas",
+"Grietas de más de 1/4 de pulgada, o losas hundidas o levantadas, conviene que las revisemos",
+"Evite que aspersores y bajantes mojen las orillas"
+]
+},
+"ask":"How much is a new concrete driveway?"
+},
+{
+"id":"patio",
+"icon":"🏡",
+"name":{
+"en":"Patios & stamped concrete",
+"es":"Patios y concreto estampado"
+},
+"desc":{
+"en":"Broom-finish, stamped and colored patios, plus pavers, steps and fire-pit pads.",
+"es":"Patios con acabado escobillado, estampado y de color, además de adoquín, escalones y bases para fogatas."
+},
+"keywords":[
+"patio",
+"patios",
+"stamped",
+"stamped concrete",
+"colored concrete",
+"pavers",
+"paver",
+"fire pit",
+"backyard",
+"steps",
+"estampado",
+"adoquin",
+"patio trasero",
+"fogata",
+"escalones"
+],
+"ask":"Do you do stamped concrete patios?"
+},
+{
+"id":"wall",
+"icon":"🧱",
+"name":{
+"en":"Block walls & retaining walls",
+"es":"Bardas de block y muros de contención"
+},
+"desc":{
+"en":"New CMU block walls, retaining walls, pilasters and caps, plus repair of cracked or leaning sections.",
+"es":"Bardas nuevas de block, muros de contención, pilares y coronas, y reparación de secciones agrietadas o inclinadas."
+},
+"keywords":[
+"block wall",
+"block walls",
+"cinder block",
+"cmu",
+"retaining wall",
+"wall",
+"walls",
+"fence wall",
+"pilaster",
+"pilasters",
+"brick",
+"bricks",
+"barda",
+"bardas",
+"muro",
+"muro de contencion",
+"block",
+"ladrillo"
+],
+"tips":{
+"en":[
+"Hairline cracks in mortar are often cosmetic",
+"Stair-step cracks, leaning, or cracks you can fit a coin in need a look soon",
+"Keep kids away from leaning sections and keep sprinklers off the base"
+],
+"es":[
+"Las grietas finas en la mezcla muchas veces son estéticas",
+"Grietas en escalera, inclinación o grietas donde cabe una moneda hay que revisarlas pronto",
+"Mantenga a los niños lejos de secciones inclinadas y los aspersores lejos de la base"
+]
+},
+"ask":"My block wall is cracked"
+},
+{
+"id":"stucco",
+"icon":"🖌️",
+"name":{
+"en":"Stucco repair & refinishing",
+"es":"Reparación y acabado de estuco"
+},
+"desc":{
+"en":"Crack and patch repair, color-matched texture, and full stucco recoats for homes and walls.",
+"es":"Reparación de grietas y parches, textura igualada al color, y recubrimiento completo de estuco para casas y bardas."
+},
+"keywords":[
+"stucco",
+"plaster",
+"exterior wall",
+"recoat",
+"color coat",
+"estuco",
+"repellado",
+"aplanado",
+"enjarre"
+],
+"tips":{
+"en":[
+"Small hairline cracks are common in desert stucco and mostly cosmetic",
+"Cracks that let water in (around windows, rooflines) should be sealed before the monsoon",
+"Don't pressure-wash damaged stucco. It can drive water behind it"
+],
+"es":[
+"Las grietas finas son comunes en el estuco del desierto y casi siempre estéticas",
+"Las grietas por donde entra agua (en ventanas o la orilla del techo) conviene sellarlas antes de las lluvias",
+"No lave con hidrolavadora el estuco dañado. Puede meter agua detrás"
+]
+},
+"ask":"I need stucco repair"
+},
+{
+"id":"repair",
+"icon":"🔨",
+"name":{
+"en":"Concrete & masonry repair",
+"es":"Reparación de concreto y mampostería"
+},
+"desc":{
+"en":"Crack repair, trip-hazard grinding, broken steps, brick and block repair, and mailbox or pillar rebuilds.",
+"es":"Reparación de grietas, nivelación de desniveles peligrosos, escalones rotos, reparación de ladrillo y block, y reconstrucción de buzones o pilares."
+},
+"keywords":[
+"crack repair",
+"cracked concrete",
+"cracks",
+"crack",
+"trip hazard",
+"uneven",
+"sunken",
+"broken steps",
+"mailbox",
+"pillar",
+"repair",
+"grieta",
+"grietas",
+"desnivel",
+"hundido",
+"escalones rotos",
+"buzon",
+"pilar"
+],
+"ask":"Can you fix cracked concrete?"
+}
+],
+"pricing":{
+"disclaimer":{
+"en":"Example pricing for this demo only. A real business sets its own prices, and the exact price is confirmed before any work starts.",
+"es":"Precios de ejemplo solo para esta demostración. Cada negocio fija sus propios precios, y el precio exacto se confirma antes de empezar cualquier trabajo."
+},
+"items":[
+{
+"label":{
+"en":"On-site estimate",
+"es":"Presupuesto en sitio"
+},
+"price":{
+"en":"Free",
+"es":"Gratis"
+},
+"keywords":[
+"estimate",
+"quote",
+"presupuesto",
+"cotizacion"
+]
+},
+{
+"label":{
+"en":"Concrete driveway (new or replace)",
+"es":"Entrada de concreto (nueva o reemplazo)"
+},
+"price":{
+"en":"$10–$16 per sq ft (incl. demo of old slab)",
+"es":"$10–$16 por pie² (incluye quitar la losa vieja)"
+},
+"keywords":[
+"driveway",
+"rv pad",
+"slab",
+"concrete",
+"entrada",
+"concreto",
+"losa"
+]
+},
+{
+"label":{
+"en":"Broom-finish patio slab",
+"es":"Losa de patio escobillada"
+},
+"price":{
+"en":"$9–$14 per sq ft",
+"es":"$9–$14 por pie²"
+},
+"keywords":[
+"patio",
+"slab",
+"losa"
+]
+},
+{
+"label":{
+"en":"Stamped / colored concrete",
+"es":"Concreto estampado / de color"
+},
+"price":{
+"en":"$14–$22 per sq ft",
+"es":"$14–$22 por pie²"
+},
+"keywords":[
+"stamped",
+"colored",
+"decorative",
+"estampado",
+"color"
+]
+},
+{
+"label":{
+"en":"Block wall (5–6 ft)",
+"es":"Barda de block (5–6 pies)"
+},
+"price":{
+"en":"$55–$90 per linear ft",
+"es":"$55–$90 por pie lineal"
+},
+"keywords":[
+"block",
+"wall",
+"fence",
+"barda",
+"muro"
+]
+},
+{
+"label":{
+"en":"Stucco patch / crack repair",
+"es":"Parche / reparación de grietas de estuco"
+},
+"price":{
+"en":"$350–$1,200",
+"es":"$350–$1,200"
+},
+"keywords":[
+"stucco",
+"patch",
+"estuco",
+"parche"
+]
+},
+{
+"label":{
+"en":"Concrete crack repair",
+"es":"Reparación de grietas en concreto"
+},
+"price":{
+"en":"From $250",
+"es":"Desde $250"
+},
+"keywords":[
+"crack",
+"repair",
+"grieta",
+"reparacion"
+]
+}
+]
+},
+"financing":{
+"text":{
+"en":"Financing is available on driveways, patios and block walls for qualified buyers (on approved credit).",
+"es":"Hay financiamiento para entradas, patios y bardas para clientes que califiquen (sujeto a aprobación de crédito)."
+},
+"partner":"[Financing partner placeholder — the client's real lender goes here]",
+"link":""
+},
+"maintenancePlan":{
+"name":"Seal & Protect Plan",
+"price":{
+"en":"$249 every 2 years (example)",
+"es":"$249 cada 2 años (ejemplo)"
+},
+"perks":{
+"en":[
+"Clean and reseal up to 600 sq ft of driveway or patio",
+"Crack fill on sealed areas",
+"Priority scheduling",
+"10% off new projects"
+],
+"es":[
+"Limpieza y resellado de hasta 600 pie² de entrada o patio",
+"Relleno de grietas en las áreas selladas",
+"Prioridad en la agenda",
+"10% de descuento en proyectos nuevos"
+]
+},
+"pitch":{
+"en":"Desert sun, freeze-thaw nights and oil drips wear concrete down. A fresh seal every couple of years keeps it looking new and resists stains.",
+"es":"El sol del desierto, las heladas y las gotas de aceite desgastan el concreto. Un sellado cada par de años lo mantiene como nuevo y resiste manchas."
+}
+},
+"issueChips":{
+"en":[
+"New driveway quote",
+"Stamped patio",
+"Block wall estimate",
+"Stucco repair",
+"Cracked concrete"
+],
+"es":[
+"Cotización de entrada",
+"Patio estampado",
+"Presupuesto de barda",
+"Reparación de estuco",
+"Concreto agrietado"
+]
+},
+"faqs":[
+{
+"id":"license",
+"q":"Are you licensed and insured?",
+"patterns":[
+"licensed",
+"license",
+"insured",
+"insurance",
+"bonded",
+"cslb",
+"licencia",
+"licenciado",
+"asegurado"
+],
+"answer":{
+"en":"Yes, we're licensed for concrete and masonry, bonded and insured.<br><small>{license}</small>",
+"es":"Sí, tenemos licencia de concreto y mampostería, fianza y seguro.<br><small>{license}</small>"
+}
+},
+{
+"id":"cure",
+"q":"When can I drive on new concrete?",
+"patterns":[
+"drive on",
+"walk on",
+"cure",
+"curing",
+"how long.*(dry|cure|set)",
+"park on",
+"secar",
+"fraguar",
+"fragua",
+"manejar sobre",
+"caminar sobre"
+],
+"answer":{
+"en":"Walk on it after <b>24–48 hours</b>, drive on it after about <b>7 days</b>, and it reaches full strength around <b>28 days</b>. In summer we pour early in the morning so it doesn't dry too fast.",
+"es":"Puede caminar después de <b>24 a 48 horas</b>, manejar después de unos <b>7 días</b>, y alcanza su resistencia total a los <b>28 días</b>. En verano colamos temprano para que no seque demasiado rápido."
+}
+},
+{
+"id":"permits",
+"q":"Do I need a permit?",
+"patterns":[
+"permit",
+"permits",
+"hoa",
+"city approval",
+"permiso",
+"permisos"
+],
+"answer":{
+"en":"Often, yes. Many cities require a permit for block walls over a certain height (commonly 6 ft freestanding or 4 ft retaining) and for driveway approaches. <b>We pull the permits</b> and work with your HOA.",
+"es":"Muchas veces sí. Muchas ciudades piden permiso para bardas de cierta altura (normalmente 6 pies sola o 4 pies de contención) y para la entrada a la calle. <b>Nosotros sacamos los permisos</b> y tratamos con su HOA."
+}
+},
+{
+"id":"howlong",
+"q":"How long does a project take?",
+"patterns":[
+"how long",
+"timeline",
+"how many days",
+"cuanto tarda",
+"cuantos dias",
+"cuanto tiempo"
+],
+"answer":{
+"en":"Most driveways and patios take <b>2–4 days</b> from demo to pour. A typical backyard block wall takes <b>1–2 weeks</b>. Permits can add time.",
+"es":"La mayoría de entradas y patios toman <b>2 a 4 días</b> desde quitar lo viejo hasta colar. Una barda típica de patio toma <b>1 a 2 semanas</b>. Los permisos pueden agregar tiempo."
+}
+},
+{
+"id":"warranty",
+"q":"Do you guarantee your work?",
+"patterns":[
+"warranty",
+"guarantee",
+"guaranteed",
+"garantia"
+],
+"answer":{
+"en":"Workmanship is guaranteed for <b>2 years</b> (example terms). Concrete can develop small hairline cracks over time. That's normal and not a structural failure.",
+"es":"La mano de obra tiene garantía de <b>2 años</b> (términos de ejemplo). El concreto puede desarrollar grietas finas con el tiempo. Es normal y no es una falla estructural."
+}
+},
+{
+"id":"estimate",
+"q":"Are estimates free?",
+"patterns":[
+"free estimate",
+"estimate free",
+"come look",
+"come out and look",
+"presupuesto gratis",
+"vienen a ver"
+],
+"answer":{
+"en":"Yes. On-site estimates are <b>free</b>. We measure, talk through options and send a written quote, usually within 2 business days.",
+"es":"Sí. Los presupuestos en sitio son <b>gratis</b>. Medimos, platicamos las opciones y le mandamos una cotización por escrito, normalmente en 2 días hábiles."
+}
+},
+{
+"id":"payment",
+"patterns":[
+"pay with",
+"credit card",
+"cash",
+"check",
+"venmo",
+"zelle",
+"payment methods",
+"accept cards",
+"tarjeta",
+"efectivo",
+"formas de pago",
+"aceptan"
+],
+"answer":{
+"en":"We accept all major credit cards, debit, cash, check and Zelle. Financing is available on bigger jobs.",
+"es":"Aceptamos tarjetas de crédito y débito, efectivo, cheque y Zelle. Hay financiamiento para trabajos más grandes."
+}
+},
+{
+"id":"discounts",
+"patterns":[
+"discount",
+"military",
+"veteran",
+"senior",
+"coupon",
+"deal",
+"special",
+"promo",
+"descuento",
+"militar",
+"veterano",
+"cupon",
+"oferta"
+],
+"answer":{
+"en":"We offer <b>10% off for seniors, military, veterans and first responders</b> (example offer).",
+"es":"Ofrecemos <b>10% de descuento para personas mayores, militares, veteranos y personal de emergencia</b> (oferta de ejemplo)."
+}
+},
+{
+"id":"reviews",
+"patterns":[
+"reviews",
+"rating",
+"ratings",
+"testimonials",
+"yelp",
+"google reviews",
+"resenas",
+"opiniones",
+"calificaciones"
+],
+"answer":{
+"en":"Customers rate us highly for showing up on time and explaining options clearly. (On a real site, this links to the Google Business Profile.)",
+"es":"Nuestros clientes nos califican muy bien por llegar a tiempo y explicar las opciones claramente. (En un sitio real, esto enlaza al perfil de Google.)"
+}
+}
+],
+"site":{
+"headline":"Driveways, patios and block walls built for the High Desert",
+"lead":"Concrete driveways, stamped patios, block walls and stucco repair by a licensed local crew, with free on-site estimates.",
+"trust":[
+"<b>★ 4.9</b> sample rating",
+"✔ Licensed C-8 / C-29",
+"📐 Free estimates",
+"🧱 Permits handled"
+],
+"badge":"🧱 Built to last",
+"promo":{
+"text":"🏡 <b>Backyard refresh:</b> stamped patios from $14/sq ft <small>(example price)</small> · Free estimates",
+"ask":"How much is a stamped concrete patio?"
+},
+"why":[
+[
+"📐 Free estimates",
+"We measure on site and send a written quote, usually in 2 business days."
+],
+[
+"💵 Upfront pricing",
+"Clear per-sq-ft and per-foot pricing. No surprise change orders."
+],
+[
+"🌵 Desert-smart",
+"Early-morning summer pours, proper base and control joints for our climate."
+],
+[
+"🛡 Guaranteed",
+"2-year workmanship guarantee (demo terms)."
+]
+],
+"reviews":[
+[
+"Tore out our cracked driveway and poured a new one with an RV pad in under a week.",
+"J. M., Hesperia"
+],
+[
+"The stamped patio looks like real flagstone. Neighbors keep asking who did it.",
+"V. C., Apple Valley"
+],
+[
+"Wind knocked part of our block wall down. They handled the permit and matched the old block.",
+"T. A., Phelan"
+]
+],
+"ctaBand":{
+"h":"Planning a project?",
+"p":"{bot} answers questions and sets up your free estimate in about a minute."
+}
+}
 }
 };

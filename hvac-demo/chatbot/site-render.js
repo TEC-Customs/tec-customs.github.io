@@ -1,6 +1,7 @@
 /* Demo page renderer (Tec Customs sales demo only; real clients don't need this file).
    Fills the sample business page from the active trade preset so one HTML page can
-   demo HVAC, plumbing, electrical, roofing, pest, solar, auto repair, collision and garage doors. */
+   demo HVAC, plumbing, electrical, roofing, pest, solar, auto repair, collision, garage doors,
+   cleaning, locksmith, appliance repair and masonry/concrete. */
 (function () {
   "use strict";
   var TC = window.TecChat; if (!TC) return;
@@ -20,7 +21,7 @@
   rootStyle.setProperty("--navy", brand); rootStyle.setProperty("--orange", accent);
   var bot = esc(en(C.bot.name)), label = en(C.label) || "Home services";
 
-  document.title = B.name + " (Demo) · " + label + " · Apple Valley, Victorville, Hesperia";
+  document.title = B.name + (/\(demo\)/i.test(B.name) ? "" : " (Demo)") + " · " + label + " · Apple Valley, Victorville, Hesperia";
   set("logo-svg", '<svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="' + brand + '"/><text x="24" y="31" text-anchor="middle" font-size="22">' + esc(C.bot.avatar) + '</text></svg>');
   set("short-name", esc(B.shortName)); set("trade-label", esc(label)); set("biz-name", esc(B.name));
   set("phone", esc(B.phone)); all("call-href").forEach(function (a) { a.href = B.phoneHref; });
