@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High Desert Comfort Heating &amp; Air (Demo) · 24/7 Website Chat Assistant by Tec Customs</title>
+<meta name="description" content="DEMO SITE by Tec Customs: a fictional High Desert business used to demonstrate a 24/7 website chat assistant that answers questions and books service calls, in English and Spanish.">
+<meta name="robots" content="noindex">
+<!-- SOCIAL PREVIEW: relative paths work on any host, but Facebook/LinkedIn/iMessage need ABSOLUTE URLs.
+     After hosting, run:  python3 tools/set-demo-url.py https://YOUR-SITE.netlify.app
+     (or hand-edit og:image / og:url / canonical below to https://YOUR-SITE/og-image.png etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tec-customs.github.io/hvac-demo/">
+<link rel="canonical" href="https://tec-customs.github.io/hvac-demo/">
+<meta property="og:title" content="24/7 Website Chat Assistant Demo · Tec Customs">
+<meta property="og:description" content="See how a chat assistant answers customer questions and captures and books leads around the clock, in English and Spanish. Demo site by Tec Customs, Apple Valley, CA.">
+<meta property="og:image" content="https://tec-customs.github.io/hvac-demo/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="image_src" href="https://tec-customs.github.io/hvac-demo/og-image.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="chatbot/tec-chat.css" data-tecchat="1">
+<link rel="stylesheet" href="chatbot/owner-panel.css">
+</head>
+<body>
+
+<div class="demo-ribbon" role="note">
+  <b>DEMO SITE</b> · Fictional business built by <a href="#about-demo">Tec Customs</a> to show a 24/7 website chat assistant.
+  <label>Trade: <select id="trade-switch" aria-label="Switch demo trade"></select></label>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="logo" href="#top" aria-label="Home">
+      <span data-r="logo-svg"></span>
+      <span><b data-r="short-name">High Desert Comfort</b><small><span data-r="trade-label">Heating &amp; Air</span> · <em>Demo</em></small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a><a href="#plan" data-r="nav-plan">Plans</a><a href="#area" data-r="nav-area">Service Area</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-call" data-r="call-href" href="tel:+17605550142"><span aria-hidden="true">📞</span> <span class="hide-sm" data-r="phone">(760) 555-0142</span><span class="show-sm">Call</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-r="eyebrow">Apple Valley · Victorville · Hesperia · Adelanto</p>
+        <h1 data-r="headline">Fast, honest heating &amp; AC repair for the High Desert</h1>
+        <p class="lead" data-r="lead">Same-day service, upfront pricing and local techs who know what 110° summers and windy winters do to your system. <b>Emergency help 24/7.</b></p>
+        <div class="cta-row">
+          <button class="btn btn-primary" data-r="book-btn" data-tecchat-open="I'd like to book a service call">📅 Book online in 60 seconds</button>
+          <a class="btn btn-ghost" data-r="call-href" href="tel:+17605550142">📞 Call <span data-r="phone">(760) 555-0142</span></a>
+        </div>
+        <ul class="trust" data-r="trust"></ul>
+      </div>
+      <div class="hero-art" aria-hidden="true" data-r="hero-art"></div>
+    </div>
+  </section>
+
+  <div class="promo"><div class="wrap" data-r="promo"></div></div>
+
+  <section id="services" class="section">
+    <div class="wrap">
+      <h2 data-r="services-h">Services</h2>
+      <p class="section-sub" data-r="services-sub">Ask the assistant about any of these. It answers 24/7.</p>
+      <div class="cards" data-r="cards"></div>
+    </div>
+  </section>
+
+  <section class="section alt"><div class="wrap why" data-r="why"></div></section>
+
+  <section id="plan" class="section" data-r="plan-section">
+    <div class="wrap plan">
+      <div>
+        <p class="eyebrow">Membership plan</p>
+        <h2 data-r="plan-h"></h2>
+        <p data-r="plan-pitch"></p>
+        <button class="btn btn-primary" data-r="plan-btn">Ask about the plan</button>
+      </div>
+      <div class="price-card"><div class="price" data-r="plan-price"></div><div class="price-sub"><i>example pricing</i></div><ul data-r="plan-perks"></ul></div>
+    </div>
+  </section>
+
+  <section id="area" class="section alt">
+    <div class="wrap">
+      <h2 data-r="area-h">Proudly serving the High Desert</h2>
+      <p class="addr" data-r="address" hidden></p>
+      <ul class="chips" data-r="area-chips"></ul>
+      <p class="section-sub">Not sure if we cover you? <button class="linkbtn" data-tecchat-open="Do you service 92345?">Type your ZIP in the chat →</button></p>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <div class="wrap">
+      <h2>What neighbors say <small class="tag-demo">sample reviews · demo</small></h2>
+      <div class="reviews" data-r="reviews"></div>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <div class="wrap faq">
+      <h2>Frequently asked questions</h2>
+      <div data-r="faq"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap"><h2 data-r="cta-h">Don't wait on hold.</h2><p data-r="cta-p">Our assistant answers questions and books your visit 24/7.</p>
+      <button class="btn btn-primary" data-tecchat-open="">💬 Chat now</button> <button class="btn btn-primary" data-tecchat-open="Hola, ¿hablan español?">🇲🇽 Chatear en español</button></div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div><b data-r="biz-name">High Desert Comfort Heating &amp; Air</b> <em>(fictional demo business)</em><br><span data-r="foot-area"></span><br>📞 <span data-r="phone">(760) 555-0142</span> · <span data-r="license"></span></div>
+    <div data-r="foot-hours"></div>
+  </div>
+</footer>
+
+<section id="about-demo" class="about-demo">
+  <div class="wrap">
+    <p class="eyebrow">About this demo</p>
+    <h2>Want a 24/7 chat assistant like this on <u>your</u> website?</h2>
+    <p>This page is a <b>fictional local business</b> created by <b>Tec Customs</b> to show what a website chat assistant does: it answers common questions instantly (in <b>English or Spanish</b>), captures the customer's name, number and request, and gets them on the schedule, even after hours when nobody is there to pick up the phone. Use the <b>Trade</b> menu at the top to see it set up for other businesses.</p>
+    <ul class="offer">
+      <li>✔ Set up with <i>your</i> services, prices, hours and service area</li>
+      <li>✔ Every lead lands in a Google Sheet + your email instantly (optional phone alert)</li>
+      <li>✔ English &amp; Spanish, works on WordPress, Wix, Squarespace, GoDaddy and custom sites</li>
+      <li>✔ <b>Installed within 48 hours</b> · <b>$397 setup</b> + optional <b>$49–$99/mo</b> care plan</li>
+    </ul>
+    <p class="contact">Tec Customs · Web design in the High Desert · P.O. Box 2751, Apple Valley, CA 92307 · <a href="mailto:tec.customs1@gmail.com?subject=Website%20chat%20assistant">tec.customs1@gmail.com</a></p>
+    <p class="fine">Demo notes: all business names, phone numbers (555-01xx), addresses, prices, reviews and license numbers are placeholders. No real appointments are created, and chat leads in this demo are stored only in your own browser. Tap “Owner view” at the bottom-left to see them.</p>
+  </div>
+</section>
+
+<!-- To demo a different trade, change ONE line in chatbot/bot-config.js (trade: "hvac") or add ?trade=plumbing to the URL. -->
+<script src="chatbot/bot-config.js"></script>
+<script src="chatbot/presets.js"></script>
+<script src="chatbot/tec-chat.js"></script>
+<script src="chatbot/site-render.js"></script>
+<script src="chatbot/owner-panel.js"></script>
+</body>
+</html>
