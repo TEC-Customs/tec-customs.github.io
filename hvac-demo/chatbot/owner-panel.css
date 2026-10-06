@@ -1,0 +1,36 @@
+.op-btn{position:fixed;left:16px;bottom:20px;z-index:2147482000;background:#111827;color:#fff;border:0;border-radius:999px;padding:11px 16px;font:600 14px system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.25);cursor:pointer}
+.op-count{display:inline-block;background:#22c55e;color:#04210f;border-radius:999px;min-width:22px;padding:1px 7px;margin-left:4px;font-size:12.5px}
+.op-panel{position:fixed;top:0;left:0;bottom:0;width:400px;max-width:100vw;background:#f8fafc;z-index:2147482500;box-shadow:8px 0 40px rgba(0,0,0,.25);transform:translateX(-105%);transition:transform .3s ease;overflow-y:auto;padding:18px;font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1d2330}
+.op-panel.show{transform:none}
+.op-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.op-kicker{font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:#16a34a;font-weight:700}
+.op-head h2{margin:2px 0 0;font-size:20px;color:#0f2a44}
+.op-x{border:0;background:#e5e7eb;border-radius:8px;width:32px;height:32px;cursor:pointer;font-size:15px;flex:none}
+.op-sub{font-size:13px;color:#4b5563;margin:8px 0 12px}
+.op-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.op-stats div{background:#fff;border-radius:12px;padding:10px 6px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.op-stats b{display:block;font-size:22px;color:#0f2a44}.op-stats span{font-size:11.5px;color:#6b7280}
+.op-list{display:flex;flex-direction:column;gap:10px}
+.op-lead{background:#fff;border-radius:12px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,.08);border-left:4px solid #f26b1d}
+.op-row1{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;font-size:15px}
+.op-tag{font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:999px}
+.op-tag.ok{background:#dcfce7;color:#166534}.op-tag.urg{background:#ffe4e6;color:#be123c}.op-tag.cb{background:#e0f2fe;color:#075985}
+.op-issue{font-weight:600;margin-bottom:2px}.op-meta{font-size:13px;color:#374151}.op-meta a{color:#c2410c}
+.op-foot{font-size:11.5px;color:#9ca3af;margin-top:4px}.op-night{color:#b45309;font-weight:600}
+.op-empty{background:#fff;border:2px dashed #d1d5db;border-radius:12px;padding:20px;text-align:center;color:#6b7280}
+.op-panel h3{font-size:14px;margin:16px 0 6px;color:#0f2a44}
+.op-un{margin:0;padding-left:18px;font-size:13px;color:#374151}.op-hint{font-size:12px;color:#6b7280;margin:6px 0 0}
+.op-tools{margin-top:16px;border-top:1px solid #e5e7eb;padding-top:12px;font-size:13px}
+.op-tools select{font:inherit;padding:4px;border-radius:6px;margin-left:4px}
+.op-btns{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.op-btns button{font:600 12.5px system-ui,sans-serif;border:1px solid #d1d5db;background:#fff;border-radius:8px;padding:6px 10px;cursor:pointer}
+.op-toast{position:fixed;top:16px;left:50%;margin-left:-160px;visibility:hidden;opacity:0;z-index:2147483100;width:320px;background:rgba(17,24,39,.96);color:#fff;border-radius:16px;padding:12px 14px;font:13.5px/1.4 system-ui,-apple-system,sans-serif;box-shadow:0 12px 30px rgba(0,0,0,.35);transform:translateY(-30px);transition:transform .35s ease,opacity .35s ease,visibility .35s}
+.op-toast.show{transform:none;opacity:1;visibility:visible}
+.op-t-app{font-size:11.5px;color:#9ca3af;margin-bottom:4px;display:flex;justify-content:space-between}
+@media (max-width:520px){.op-btn{bottom:auto;top:auto;left:12px;bottom:14px;padding:9px 12px;font-size:13px}.op-panel{width:100vw}.op-toast{left:12px;right:12px;width:auto;margin-left:0}}
+
+/* v2: delivery status + language */
+.op-deliv{margin-top:6px;font-size:12.5px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.op-deliv small{color:#64707d}
+.op-resend{border:1px solid #cbd5e1;background:#fff;border-radius:6px;padding:2px 8px;font-size:12px;cursor:pointer;font-family:inherit}
+.op-lang{display:inline-block;font-size:10.5px;background:#0f766e;color:#fff;border-radius:4px;padding:1px 5px;vertical-align:middle;margin-left:4px}
