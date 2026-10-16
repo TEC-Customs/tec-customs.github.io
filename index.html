@@ -625,7 +625,7 @@ var WHENS = [["⚡","ASAP"],["📆","Within a week"],["🗓️","Within a month"
 var CITIES = ["Victorville","Apple Valley","Hesperia","Adelanto","Phelan","Oak Hills","Lucerne Valley","Barstow"];
 
 var CHECK_SVG = '<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':""","'":"&#39;"}[c]})}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"\u0026quot;","'":"&#39;"}[c]})}
 function buildOpts(el,name,list,multi){
   el.innerHTML = list.map(function(o,i){
     return '<label class="opt'+(multi?' multi':'')+'"><input type="'+(multi?'checkbox':'radio')+'" name="'+name+'" value="'+esc(o[1])+'" id="'+name+'_'+i+'">'+
