@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#601e32" />
+    <meta name="description" content="For Hannah. A little corner of the world, with love from Tim." />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>For Hannah · With love, Tim</title>
+    <style>:root {
+  --ink: #481a2a;
+  --wine: #601e32;
+  --paper: #fff4e9;
+  --muted: #755664;
+  --line: #dac2bb;
+  --serif: "Baskerville", "Palatino Linotype", Georgia, serif;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color-scheme: light;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 7px; }
+::selection { background: #601e32; color: #fff4e9; }
+p, h1, h2 { margin: 0; }
+.skip-link { position: absolute; top: -8rem; left: 1rem; z-index: 20; padding: 1rem; background: var(--paper); }
+.skip-link:focus { top: 1rem; }
+
+.site-header { position: absolute; top: 0; left: 0; width: 100%; z-index: 3; display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: 1.75rem 4.5%; border-bottom: 1px solid #481a2a30; }
+.wordmark { font-family: var(--serif); font-size: 2.125rem; line-height: 1.1; }
+.wordmark span { color: var(--wine); }
+.header-note { display: inline-flex; align-items: center; gap: 1.75rem; min-height: 2.75rem; font-size: .875rem; }
+.header-note span { font-size: 1.25rem; transition: transform .2s ease; }
+.header-note:hover span { transform: translate(2px,-2px); }
+
+.hero { position: relative; isolation: isolate; min-height: 54rem; min-height: min(58rem, max(48rem, 100svh)); display: flex; align-items: center; padding: 9rem 8% 10rem; overflow: hidden; background: #e8a57f; }
+.hero-art, .hero-wash { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
+.hero-art { object-fit: cover; object-position: center 60%; }
+.hero-wash { z-index: -1; background: linear-gradient(90deg, rgba(255,231,205,.78) 0%, rgba(255,225,196,.55) 35%, rgba(249,219,192,.12) 70%), linear-gradient(180deg,rgba(255,231,209,.35), transparent 60%, rgba(61,20,36,.78)); }
+.hero-content { max-width: 58rem; animation: arrive 1s ease both; }
+.eyebrow { font-size: .875rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; line-height: 1.7; }
+.hero h1 { display: flex; flex-direction: column; align-items: flex-start; margin: 1.625rem 0 1.75rem -.075em; font-family: var(--serif); font-size: clamp(5.5rem, 11.5vw, 11rem); font-weight: 400; line-height: 1.02; letter-spacing: -.035em; }
+.hero h1 em { display: block; padding-left: .2em; font-weight: 400; }
+.hero-message { font-size: clamp(1.125rem, 1.65vw, 1.4375rem); line-height: 1.6; }
+.note-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 3rem; min-height: 3.5rem; margin-top: 2.25rem; padding: .875rem 1.25rem; color: var(--paper); background: var(--wine); border: 1px solid var(--wine); border-radius: 2px; font-size: 1rem; transition: background .2s ease, transform .2s ease; }
+.note-link span { font-size: 1.25rem; }
+.note-link:hover { background: #461123; transform: translateY(-2px); }
+.hero-bottom { position: absolute; bottom: 2rem; left: 4.5%; right: 4.5%; display: flex; justify-content: space-between; gap: 1.5rem; color: #fff7ec; font-family: var(--serif); font-style: italic; font-size: 1.3125rem; }
+
+.note-section { padding: 8.5rem 8% 8rem; }
+.note-layout { max-width: 78rem; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(3rem, 8vw, 8rem); align-items: start; }
+.note-aside { padding-top: .375rem; }
+.note-aside .eyebrow { max-width: 18rem; color: var(--muted); }
+h2 { margin-top: 1.75rem; font-family: var(--serif); font-size: clamp(2.625rem, 4.25vw, 4.375rem); font-weight: 400; line-height: 1.15; letter-spacing: -.025em; }
+h2 em { color: var(--wine); font-weight: 400; }
+.initials { display: inline-flex; gap: .75rem; align-items: baseline; margin-top: 4rem; border-top: 1px solid var(--line); padding-top: 1.5rem; font-family: var(--serif); font-size: 2rem; }
+.initials span { color: var(--muted); font-size: 1.3125rem; font-style: italic; }
+.letter { max-width: 37rem; font-size: 1.125rem; line-height: 1.9; }
+.letter > p + p { margin-top: 1.5rem; }
+.letter .salutation { margin-bottom: 1.75rem; font-family: var(--serif); font-size: 2.625rem; line-height: 1.2; font-style: italic; }
+.letter .letter-closing { font-family: var(--serif); font-size: 1.8125rem; line-height: 1.4; }
+.letter .signature { display: flex; flex-direction: column; align-items: flex-start; margin-top: 2rem; font-family: var(--serif); font-size: 3rem; font-style: italic; line-height: 1.35; }
+.signature span { font-family: var(--sans); font-size: .9375rem; font-style: normal; }
+
+.closing { position: relative; text-align: center; padding: 5.75rem 1.5rem 6.25rem; color: var(--paper); background: var(--wine); }
+.closing .eyebrow { color: #ebc6c0; }
+.closing-line { margin-top: 1.75rem; font-family: var(--serif); font-size: clamp(2.75rem, 5.4vw, 5.625rem); font-weight: 400; line-height: 1.12; letter-spacing: -.025em; }
+.closing-line em { color: #f2c6ad; }
+.closing-caption { margin-top: 2rem; font-size: 1rem; line-height: 1.6; color: #f6ded3; }
+.site-footer { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.75rem 4.5%; font-size: .875rem; line-height: 1.6; }
+.site-footer p span { color: var(--muted); margin-left: .5rem; }
+.site-footer a { display: inline-flex; align-items: center; gap: 1.25rem; min-height: 2.75rem; }
+.site-footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+@keyframes arrive { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (min-width: 1700px) { .hero { padding-left: max(8%, calc((100vw - 1400px)/2)); } }
+@media (max-width: 760px) {
+  .site-header { padding: 1.25rem 6%; gap: 1rem; }
+  .wordmark { font-size: 1.875rem; }
+  .header-note { gap: .625rem; }
+  .hero { min-height: 49rem; min-height: max(46rem, 94svh); padding: 8.5rem 7% 7.5rem; align-items: center; }
+  .hero-art { object-position: 60% center; }
+  .hero-wash { background: linear-gradient(90deg,rgba(255,231,205,.82),rgba(255,224,196,.52) 68%,rgba(249,219,192,.15)),linear-gradient(180deg,rgba(255,231,209,.25),transparent 55%,rgba(61,20,36,.82)); }
+  .hero .eyebrow { max-width: 17rem; }
+  .hero h1 { font-size: clamp(4.75rem, 15.5vw, 7.375rem); margin-top: 1.5rem; }
+  .hero-message { font-size: 1.125rem; }
+  .hero-bottom { left: 7%; right: 7%; bottom: 1.625rem; font-size: 1.0625rem; }
+  .hero-bottom span:last-child { text-align: right; max-width: 10rem; }
+  .note-section { padding: 4.5rem 7% 4.75rem; }
+  .note-layout { grid-template-columns: 1fr; gap: 2.75rem; }
+  .note-aside .eyebrow { max-width: none; }
+  h2 { font-size: clamp(2.75rem, 8vw, 3.625rem); margin-top: 1.125rem; }
+  .initials { display: none; }
+  .letter { border-top: 1px solid var(--line); padding-top: 2.5rem; font-size: 1.0625rem; line-height: 1.85; }
+  .closing { padding: 4.5rem 7%; }
+  .closing-line { font-size: clamp(2.625rem, 9vw, 4.25rem); }
+  .site-footer { padding: 1.5rem 7%; flex-direction: column; align-items: flex-start; gap: .25rem; }
+}
+
+@media (max-width: 360px) {
+  .hero h1 { font-size: 4.75rem; }
+  .header-note { gap: .375rem; }
+  .hero-bottom { gap: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+/* A keepsake letter, tucked into a warm autumn scrapbook. */
+body{background:#eee1ce;background-image:radial-gradient(#9b78551a .7px,transparent .7px);background-size:5px 5px;color:#493c32}
+.site-header{position:relative;border:0;padding:1.3rem 7%;max-width:1250px;margin:auto}.wordmark{font-style:italic}.header-note{font-family:Georgia,serif;font-style:italic}
+.hero{min-height:710px;max-width:1120px;margin:1rem auto 5rem;padding:5rem 7% 7rem;background:#faf3e6;overflow:visible;box-shadow:0 18px 55px #57361b20;transform:rotate(-1deg);border:12px solid #fffaf0;border-bottom-width:55px}
+.hero:before,.hero:after{content:'';position:absolute;width:130px;height:38px;top:-23px;background:#c9ae7d80;z-index:4;transform:rotate(-19deg)}.hero:before{left:8%}.hero:after{right:7%;transform:rotate(20deg)}
+.hero-art{inset:auto 3% 9% auto;width:43%;height:62%;object-fit:cover;object-position:70%;border:10px solid #fffdf5;border-bottom-width:42px;box-shadow:0 5px 18px #43251930;transform:rotate(6deg);z-index:-1}
+.hero-wash{background:linear-gradient(90deg,#faf3e6 48%,#faf3e600 78%);z-index:0;pointer-events:none}.hero-content{position:relative;z-index:1;max-width:65%}.eyebrow{font-size:.7rem;letter-spacing:.17em;color:#80674f}.hero h1{font-size:clamp(4rem,8vw,7rem);color:#733d3c}.hero h1 em{padding-left:.1em}.hero-message{font-family:Georgia,serif;font-style:italic;font-size:1.4rem}.note-link{background:transparent;border:0;border-bottom:1px solid #9b6961;color:#733d3c;padding:.7rem 0;border-radius:0;font-family:Georgia,serif;font-style:italic}.note-link:hover{background:transparent}.hero-bottom{bottom:-39px;color:#80674f;font-size:1rem;left:3%;right:3%}
+.note-section{padding:3rem 7% 6rem}.note-layout{max-width:1000px;gap:4rem;grid-template-columns:.8fr 1.2fr;align-items:center}.note-aside{transform:rotate(-3deg)}h2{font-size:3rem;color:#733d3c}.initials{border:1px solid #a77d69;border-radius:50%;width:125px;height:125px;align-items:center;justify-content:center;padding:0;margin-top:2rem;color:#733d3c;transform:rotate(-10deg)}
+.letter{position:relative;background:#fffaf0;padding:3rem 2.7rem;box-shadow:0 10px 35px #57361b15;transform:rotate(1deg);font-family:Georgia,serif;font-size:1.12rem;line-height:1.95;border:1px solid #d6c4a840}.letter:before{content:'♡';position:absolute;right:25px;top:20px;font-size:2rem;color:#a36c66}.letter .salutation{color:#733d3c}.signature{color:#733d3c}.closing{background:#655e45;color:#fff5df;margin:0 4% 2rem;border-radius:50% 50% 3px 3px / 12% 12% 3px 3px;padding-top:6rem}.closing:before{content:'T ♡ H';display:block;font-family:Georgia,serif;font-style:italic;font-size:1.5rem;color:#e8c799;margin-bottom:2rem}.closing .eyebrow{color:#e2d5b8}.closing-line em{color:#edd2a6}.site-footer{max-width:1200px;margin:auto;color:#80674f}
+@media(max-width:760px){.site-header{padding:1rem 6%}.hero{margin:1rem 6% 4rem;min-height:760px;padding:3rem 7% 19rem;border-width:7px;border-bottom-width:45px}.hero-content{max-width:100%}.hero h1{font-size:clamp(3.8rem,15vw,6rem);margin:1rem 0}.hero-message{font-size:1.15rem}.hero-art{width:65%;height:245px;bottom:12px;right:6%;border-width:7px;border-bottom-width:28px;z-index:0}.hero-wash{display:none}.hero:before,.hero:after{width:80px;height:27px;top:-17px}.hero-bottom{bottom:-33px;font-size:.8rem}.hero-bottom span:last-child{max-width:9rem}.note-layout{grid-template-columns:1fr;gap:2rem}.note-aside{text-align:center}.initials{display:none}h2{font-size:2.7rem}.letter{padding:2.5rem 1.6rem;border-top:0;font-size:1.05rem}.note-section{padding:1rem 7% 4rem}.closing{margin:0 3% 1rem;padding:4rem 6%}.closing-line{font-size:2.7rem}.site-footer{font-size:.8rem}}
+</style>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23601e32'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='46' fill='%23fff0df'%3EH%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#note">Skip to the note</a>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="For Hannah, back to top">Hannah<span>.</span></a>
+      <a class="header-note" href="#note">With love, Tim <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img class="hero-art" src="https://for-hannah-with-love.outlawfordtec.chatgpt.site/assets/desert-sunset.webp" alt="" width="1672" height="941" fetchpriority="high" />
+        <div class="hero-wash" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">A little corner of the world, for you</p>
+          <h1 id="hero-title">For <em>Hannah.</em></h1>
+          <p class="hero-message">The life I want to build<br />has you in it.</p>
+          <a class="note-link" href="#note">A note for you <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-bottom" aria-hidden="true">
+          <span>Just you &amp; me.</span>
+          <span>And everything still ahead.</span>
+        </div>
+      </section>
+
+      <section class="note-section" id="note" aria-labelledby="note-title">
+        <div class="note-layout">
+          <div class="note-aside">
+            <p class="eyebrow">Something I want you to know</p>
+            <h2 id="note-title">It’s you.<br /><em>It’s always you.</em></h2>
+            <div class="initials" aria-label="Tim and Hannah">T <span>&amp;</span> H</div>
+          </div>
+          <article class="letter" aria-label="A note from Tim to Hannah">
+            <p class="salutation">Hannah,</p>
+            <p>I love you. I wanted you to have a little piece of my heart here, something you can come back to whenever you want to feel close to me.</p>
+            <p>When I think about my future, I see you in it. I picture a home we get to call ours, your things beside mine, and the feeling of knowing that at the end of a long day, we get to come back to each other.</p>
+            <p>I want the little things with you. Sleepy mornings. Long hugs in the kitchen. Making dinner together, deciding what to watch, and reaching for your hand without even thinking about it. I want all those ordinary moments that become special because we’re sharing them.</p>
+            <p>You are beautiful to me, Hannah. I want you to feel that when I look at you, when I hold you, and in the way I make room for you in my life. I want you to feel wanted, appreciated, and loved for the person you are.</p>
+            <p>I know I don’t always find the right words. Sometimes I get quiet or caught up in everything I’m trying to figure out. There is so much I want to learn to say better, and so much love I want to show you in ways you can actually feel.</p>
+            <p>When I talk about finding better work, having a place of our own, and building a family someday, I’m thinking about the life I want us to have together. I want room for laughter, for rest, for adventures, and for evenings when there’s nowhere else either of us needs to be.</p>
+            <p>We have so much still ahead of us. I want to keep getting to know you as we grow, keep making memories with you, and keep finding little ways to make you smile. I want years of stories that start with “remember when,” and a home full of things that remind us of a life we built together.</p>
+            <p>So whenever you come back to this page, imagine me pulling you close and telling you this: I love you. I’m glad I get to love you. And when I picture the days ahead, my favorite part is you.</p>
+            <p class="letter-closing">You, me, and all the ordinary days.<br />That’s the life I want.</p>
+            <p class="signature"><span>With love,</span>Tim</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing" aria-label="A dedication to Hannah">
+        <p class="eyebrow">For the days ahead</p>
+        <p class="closing-line">You, me,<br /><em>and a life of our own.</em></p>
+        <p class="closing-caption">One day at a time. Together.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>For Hannah. <span>With love, Tim.</span></p>
+      <a href="#home">Back to the beginning <span aria-hidden="true">↑</span></a>
+    </footer>
+  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a57ca24bddf7af1e',t:'MTc5NDIyNTM4NA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a57ca24bddf7af1e',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
