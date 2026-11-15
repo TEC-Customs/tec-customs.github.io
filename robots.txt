@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tec-customs.github.io/sitemap.xml
