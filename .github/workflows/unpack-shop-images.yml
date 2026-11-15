@@ -1,0 +1,48 @@
+# Unpacks _shop_bundle/ (text-encoded JPEGs) into shop/img/ and deletes the bundle.
+# Used because the GitHub API tools we have cannot upload binary files.
+name: Unpack shop images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_shop_bundle/**"
+      - ".github/og/unpack_shop_images.py"
+      - ".github/workflows/unpack-shop-images.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: unpack-shop-images
+  cancel-in-progress: false
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unpack shop image bundle
+        run: python .github/og/unpack_shop_images.py
+      - name: Commit
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A .
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "Unpack shop design thumbnails into /shop/img/"
+          git pull --rebase -q origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Request Pages build
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || echo "::warning::Pages build request failed; next push will publish"
