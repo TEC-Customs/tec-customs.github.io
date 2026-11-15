@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Website Checkup for Local Businesses | TEC Customs</title>
+<meta name="description" content="Free website checkup for local businesses. Enter your site and get a score for speed, SEO, accessibility and best practices, plus a plain-English fix list. Online only.">
+<link rel="canonical" href="https://tec-customs.github.io/checkup/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0b0b0d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TEC Customs">
+<meta property="og:title" content="Free Website Checkup for Local Businesses">
+<meta property="og:description" content="Get a score for speed, SEO, accessibility and best practices, plus a plain-English fix list. Free, no sign-up.">
+<meta property="og:url" content="https://tec-customs.github.io/checkup/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Website Checkup for Local Businesses">
+<meta name="twitter:description" content="Score your site for speed, SEO, accessibility and best practices. Plain-English fix list. Free.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0d'/%3E%3Cpath d='M18 34l9 9 19-21' stroke='%232f6fe4' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.microlink.io" crossorigin>
+<link rel="preconnect" href="https://www.googleapis.com" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","name":"Local Business Website Checkup","url":"https://tec-customs.github.io/checkup/","applicationCategory":"BusinessApplication","operatingSystem":"Any (runs in your web browser)","description":"Free tool that scores a website for speed, SEO, accessibility and best practices using Google Lighthouse, then lists fixes in plain English.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@id":"https://tec-customs.github.io/#org"}},
+{"@type":"Organization","@id":"https://tec-customs.github.io/#org","name":"TEC Customs","url":"https://tec-customs.github.io/"},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tec-customs.github.io/"},{"@type":"ListItem","position":2,"name":"Website Checkup","item":"https://tec-customs.github.io/checkup/"}]}
+]}
+</script>
+<style>
+:root{--bg:#0b0b0d;--panel:#16171a;--panel2:#1d1f23;--line:#2a2c31;--t:#f4f4f2;--mut:#a3a5ab;--blue:#2f6fe4;--blue2:#5b8ff0;--ford:#003478;--good:#3ccf7a;--ok:#f0b429;--bad:#f0524f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--t);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--blue2)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:#000}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{color:var(--t);text-decoration:none;font-weight:800;letter-spacing:.14em;font-size:.95rem}
+.logo span{color:var(--blue2)}
+header nav a{color:var(--mut);text-decoration:none;font-size:.9rem;margin-left:18px}
+header nav a:hover{color:var(--t)}
+.hero{padding:56px 0 28px;background:radial-gradient(ellipse at 50% -20%,rgba(0,52,120,.55),transparent 65%)}
+.kicker{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue2);border:1px solid rgba(47,111,228,.45);border-radius:999px;padding:4px 12px;margin-bottom:16px}
+h1{font-size:clamp(1.9rem,5vw,2.9rem);line-height:1.15;letter-spacing:-.02em;margin-bottom:14px}
+.lead{color:var(--mut);font-size:1.08rem;max-width:640px}
+form{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
+label.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+input[type=text]{flex:1 1 300px;min-width:0;font:inherit;font-size:1.05rem;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:#0f1013;color:var(--t);outline:none}
+input[type=text]:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(47,111,228,.3)}
+.btn{display:inline-block;font:inherit;font-weight:700;font-size:1rem;padding:14px 22px;border-radius:12px;border:0;cursor:pointer;text-decoration:none;text-align:center;background:var(--blue);color:#fff}
+.btn:hover{background:#255fcc}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--t)}
+.btn.ghost:hover{border-color:var(--blue2)}
+.hint{color:var(--mut);font-size:.85rem;margin-top:10px}
+.err{color:#ff8c89;margin-top:10px;font-weight:600}
+section{padding:28px 0}
+h2{font-size:1.45rem;letter-spacing:-.01em;margin-bottom:12px}
+h3{font-size:1.05rem;margin-bottom:6px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+#status{display:none}
+.spin{width:22px;height:22px;border:3px solid var(--line);border-top-color:var(--blue2);border-radius:50%;animation:s 1s linear infinite;display:inline-block;vertical-align:middle;margin-right:10px}
+@keyframes s{to{transform:rotate(360deg)}}
+#results{display:none}
+.top{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.ring{--p:0;--c:var(--blue);width:140px;height:140px;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),#2a2c31 0);display:grid;place-items:center;flex:0 0 auto}
+.ring div{width:112px;height:112px;border-radius:50%;background:var(--panel);display:grid;place-items:center;text-align:center}
+.ring b{font-size:2.4rem;line-height:1}
+.ring small{display:block;color:var(--mut);font-size:.75rem}
+.top .meta{flex:1 1 260px}
+.site{font-weight:700;word-break:break-all}
+.grade{font-size:1.15rem;font-weight:700;margin:4px 0}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}
+.cat{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.cat b{display:block;font-size:1.6rem}
+.cat span{color:var(--mut);font-size:.8rem}
+.g{color:var(--good)}.o{color:var(--ok)}.r{color:var(--bad)}
+ul.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;margin-top:6px}
+ul.checks li{display:flex;gap:8px;align-items:flex-start;font-size:.95rem}
+.dot{flex:0 0 auto;width:20px;height:20px;border-radius:50%;display:inline-grid;place-items:center;font-size:.75rem;font-weight:800;color:#0b0b0d;margin-top:2px}
+.dot.pass{background:var(--good)}.dot.fail{background:var(--bad)}.dot.warn{background:var(--ok)}.dot.na{background:#55585f}
+ol.fixes{list-style:none;counter-reset:f}
+ol.fixes li{counter-increment:f;border-top:1px solid var(--line);padding:14px 0 14px 44px;position:relative}
+ol.fixes li:first-child{border-top:0}
+ol.fixes li::before{content:counter(f);position:absolute;left:0;top:14px;width:30px;height:30px;border-radius:8px;background:var(--panel2);border:1px solid var(--line);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:6px;margin-right:6px;vertical-align:2px}
+.tag.high{background:rgba(240,82,79,.18);color:#ff8c89}.tag.med{background:rgba(240,180,41,.16);color:#f5c656}.tag.low{background:rgba(163,165,171,.15);color:var(--mut)}
+.area{color:var(--mut);font-size:.8rem}
+.fix p{color:var(--mut);font-size:.93rem;margin-top:2px}
+.fix .val{color:var(--t);font-weight:600}
+.cta{background:linear-gradient(135deg,var(--ford),#0b1f45);border:1px solid rgba(91,143,240,.35);border-radius:18px;padding:26px}
+.cta h2{margin-bottom:8px}
+.cta p{color:#d3dbea}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.cta .btn{background:#fff;color:var(--ford)}
+.cta .btn:hover{background:#e6ecf7}
+.cta .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid3 .card p,.faq p{color:var(--mut);font-size:.95rem}
+.faq details{border-top:1px solid var(--line);padding:12px 0}
+.faq summary{cursor:pointer;font-weight:600}
+.faq p{margin-top:6px}
+.small{color:var(--mut);font-size:.82rem}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mut);font-size:.85rem}
+footer a{color:var(--mut)}
+@media (max-width:640px){.cats{grid-template-columns:repeat(2,1fr)}ul.checks{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}header nav a.hide-sm{display:none}.top{justify-content:center;text-align:center}.btn{width:100%}form .btn{flex:1 1 100%}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="https://tec-customs.github.io/">TEC <span>CUSTOMS</span></a>
+<nav><a href="https://tec-customs.github.io/" class="hide-sm">Home</a><a href="https://tec-customs.github.io/request/">Request help</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+<span class="kicker">Free tool</span>
+<h1>Free Website Checkup for Local Businesses</h1>
+<p class="lead">Enter your website and get a score for speed, SEO, accessibility and best practices, plus a fix list written in plain English. No sign-up.</p>
+<form id="f" novalidate>
+<label class="sr" for="u">Your website address</label>
+<input id="u" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="yourbusiness.com" required>
+<button class="btn" id="go" type="submit">Check my site</button>
+</form>
+<p class="hint">The test runs a real mobile page load using Google Lighthouse. It usually takes 20 to 60 seconds.</p>
+<p class="err" id="err" role="alert"></p>
+</div></div>
+
+<div class="wrap">
+<section id="status" aria-live="polite"><div class="card"><span class="spin"></span><span id="stxt">Starting the checkup...</span></div></section>
+
+<section id="results" aria-live="polite">
+<div class="card">
+<div class="top">
+<div class="ring" id="ring"><div><span><b id="score">0</b><small>out of 100</small></span></div></div>
+<div class="meta">
+<div class="small">Results for</div>
+<div class="site" id="site"></div>
+<div class="grade" id="grade"></div>
+<p class="small" id="method"></p>
+</div>
+</div>
+<div class="cats" id="cats"></div>
+</div>
+
+<div class="card" style="margin-top:14px">
+<h2>The basics</h2>
+<ul class="checks" id="checks"></ul>
+</div>
+
+<div class="card" style="margin-top:14px">
+<h2 id="fixtitle">Your fix list</h2>
+<p class="small" id="fixnote">Sorted by what matters most to customers and Google.</p>
+<ol class="fixes" id="fixes"></ol>
+<p class="small" id="psilink" style="margin-top:10px"></p>
+<button class="btn ghost" id="more" type="button" style="display:none;margin-top:8px">Show all fixes</button>
+</div>
+</section>
+
+<section id="cta">
+<div class="cta">
+<h2>Want it fixed?</h2>
+<p>I build fast, mobile-friendly one-page websites for local businesses for a flat $149. Everything is handled online, by text or email.</p>
+<div class="row">
+<a class="btn" href="https://square.link/u/V0UdCpha" rel="noopener">One-page website, $149</a>
+<a class="btn ghost" href="https://tec-customs.github.io/request/">Request help</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2>What the checkup looks at</h2>
+<div class="grid3">
+<div class="card"><h3>Speed on phones</h3><p>How fast your page shows up and becomes usable on a typical mobile connection. Slow pages lose visitors.</p></div>
+<div class="card"><h3>Google basics (SEO)</h3><p>Page title, description, crawlable links and other signals search engines use to understand your business.</p></div>
+<div class="card"><h3>Easy to use</h3><p>Readable text, labeled buttons, image descriptions and secure HTTPS, so every visitor can use your site and trust it.</p></div>
+</div>
+</section>
+
+<section class="faq">
+<h2>Questions</h2>
+<details><summary>Is it really free?</summary><p>Yes. There is no sign-up and nothing to buy. The fix list is yours to use however you like, including fixing things yourself.</p></details>
+<details><summary>Where do the scores come from?</summary><p>From Google Lighthouse, the same open-source test behind Google PageSpeed Insights. The test is run by Google PageSpeed Insights when it is available, or by the Microlink API otherwise. The overall score is the average of the four Lighthouse category scores.</p></details>
+<details><summary>Why did my score change when I ran it again?</summary><p>Speed scores move a bit between runs because network and server conditions change. Look at the fix list more than the exact number.</p></details>
+<details><summary>Do you store my website or results?</summary><p>No. The checkup runs in your browser. The address you enter is sent only to the testing service (Google PageSpeed Insights or Microlink) to run the test. This page has no tracking or analytics.</p></details>
+<details><summary>Why did it say the daily limit was reached?</summary><p>The free testing services allow a limited number of checks per day. If you hit the limit, try again tomorrow, or <a href="https://tec-customs.github.io/request/">request help</a> and I will run the checkup for you.</p></details>
+</section>
+</div>
+</main>
+
+<footer><div class="wrap">
+<p><a href="https://tec-customs.github.io/">TEC Customs</a>. Websites and tech help, handled online. Scores are generated automatically by Google Lighthouse and are a starting point, not a guarantee of rankings or sales.</p>
+</div></footer>
+
+<script>
+(function(){
+"use strict";
+var $=function(id){return document.getElementById(id)};
+var form=$("f"),input=$("u"),go=$("go"),err=$("err");
+var CATS=[["performance","Speed"],["seo","SEO"],["accessibility","Accessibility"],["best-practices","Best practices"]];
+var SKIP={"valid-source-maps":1,"csp-xss":1,"has-hsts":1,"origin-isolation":1,"clickjacking-mitigation":1,"trusted-types-xss":1,"max-potential-fid":1,"interactive":1,"first-contentful-paint":1,"speed-index":1,"mainthread-work-breakdown":1,"network-dependency-tree-insight":1,"forced-reflow-insight":1,"bf-cache":1,"lcp-breakdown-insight":1,"lcp-phase-insight":1,"redirects-http":1,"is-on-https":1,"document-title":1,"meta-description":1,"viewport":1,"meta-viewport":1};
+var MAP={
+"largest-contentful-paint":["high","Speed","Your main content loads slowly on phones","[The biggest thing on your page took {v} to appear.] Google wants this under 2.5 s. Compress large images and remove heavy scripts or sliders near the top."],
+"total-blocking-time":["high","Speed","The page freezes while it loads","[Scripts kept the page from responding to taps for {v}.] Remove unused plugins, chat widgets or trackers, or load them later."],
+"cumulative-layout-shift":["med","Speed","Things jump around while the page loads","[Layout shift score is {v} (good is under 0.1).] Give images and embeds a set width and height so text does not move under a visitor's finger."],
+"layout-shifts":["med","Speed","Things jump around while the page loads","Give images, ads and embeds a fixed size so the page does not shift."],
+"cls-culprits-insight":["med","Speed","Things jump around while the page loads","Give images, ads and embeds a fixed size so the page does not shift."],
+"render-blocking-insight":["med","Speed","Files are blocking the page from showing","Some CSS or script files must finish downloading before anything appears. [Est. savings: {v}.] Load non-critical files later."],
+"render-blocking-resources":["med","Speed","Files are blocking the page from showing","Some CSS or script files must finish downloading before anything appears. [Est. savings: {v}.]"],
+"unused-javascript":["med","Speed","Your site loads code it never uses","[Removing unused scripts and plugins would save {v}.]"],
+"unused-css-rules":["low","Speed","Your site loads styling it never uses","[Removing unused CSS would save {v}.]"],
+"unminified-javascript":["low","Speed","Scripts are not compressed","[Minifying JavaScript would save {v}.]"],
+"unminified-css":["low","Speed","Styles are not compressed","[Minifying CSS would save {v}.]"],
+"image-delivery-insight":["high","Speed","Your images are too big","[Resizing and compressing images would save {v}.] This is often the easiest speed win."],
+"uses-optimized-images":["high","Speed","Your images are too big","[Compressing images would save {v}.]"],
+"modern-image-formats":["med","Speed","Images use older, heavier formats","[Saving photos as WebP or AVIF would save {v}.]"],
+"uses-responsive-images":["med","Speed","Phones download desktop-size images","[Serving smaller images to phones would save {v}.]"],
+"offscreen-images":["low","Speed","Images below the fold load right away","Lazy-load images further down the page. [Est. savings: {v}.]"],
+"uses-text-compression":["med","Speed","Text files are not compressed","Turn on gzip or Brotli compression on your server. [Est. savings: {v}.]"],
+"document-latency-insight":["med","Speed","The server is slow to respond or is not compressing","Your host takes too long to send the first byte or is not compressing files. A faster host or caching usually fixes this."],
+"server-response-time":["med","Speed","Your server is slow to respond","[The first response took {v}.] Caching or a faster host would help."],
+"redirects":["med","Speed","Extra redirects slow down the first visit","Link straight to your final address. [Est. savings: {v}.]"],
+"total-byte-weight":["med","Speed","The page is heavy to download","[Total size is {v}.] Large pages are slow and eat into visitors' data plans."],
+"uses-long-cache-ttl":["low","Speed","Repeat visitors re-download files","[Set longer cache times for images, CSS and scripts. {v}.]"],
+"cache-insight":["low","Speed","Repeat visitors re-download files","Set longer cache times for images, CSS and scripts. [Est. savings: {v}.]"],
+"font-display":["low","Speed","Text stays invisible while fonts load","Use font-display: swap so text shows right away."],
+"font-display-insight":["low","Speed","Text stays invisible while fonts load","Use font-display: swap so text shows right away."],
+"bootup-time":["med","Speed","Too much JavaScript runs on load","[Scripts took {v} to run.] Remove plugins and widgets you do not need."],
+"third-party-summary":["med","Speed","Outside scripts slow your page","[Widgets, trackers and embeds from other companies are adding load time. {v}.]"],
+"third-parties-insight":["med","Speed","Outside scripts slow your page","Widgets, trackers and embeds from other companies are adding load time."],
+"dom-size":["low","Speed","The page structure is very large","[Your page has {v}.] Simpler pages load and respond faster."],
+"dom-size-insight":["low","Speed","The page structure is very large","Simpler pages load and respond faster on phones."],
+"lcp-discovery-insight":["med","Speed","Your main image is found late","Make sure the main hero image is in the page HTML and not lazy-loaded."],
+"lcp-phase-insight":["low","Speed","The main content takes several steps to appear","Speed up the server and the main image so content shows sooner."],
+"efficient-animated-content":["low","Speed","Animated GIFs are heavy","Use video instead of large GIFs. [Est. savings: {v}.]"],
+"duplicated-javascript-insight":["low","Speed","The same code loads more than once","Remove duplicate copies of scripts."],
+"legacy-javascript-insight":["low","Speed","Old-style code is being sent to modern phones","[Est. savings: {v}.]"],
+"http-status-code":["high","SEO","The page returns an error code","Google may not index a page that returns an error. Make sure your home page loads with a normal 200 status."],
+"is-crawlable":["high","SEO","Google is blocked from indexing this page","Something on the page tells search engines not to list it. Remove the noindex tag unless that is on purpose."],
+"robots-txt":["med","SEO","Your robots.txt file has problems","Fix the robots.txt file so search engines read it correctly."],
+"link-text":["low","SEO","Links say things like \"click here\"","Use descriptive link text like \"See our services\" so Google and visitors know where links go."],
+"crawlable-anchors":["med","SEO","Some links can not be followed by Google","Use normal links with a real web address instead of script-only buttons."],
+"hreflang":["low","SEO","Language tags are set up wrong","Fix or remove the hreflang tags."],
+"canonical":["med","SEO","The canonical tag points to the wrong place","Make the canonical tag point to this page's own address."],
+"image-alt":["med","Accessibility","Images have no descriptions","Add short alt text to images. It helps blind visitors and helps Google understand your photos."],
+"color-contrast":["med","Accessibility","Some text is hard to read","Text and background colors are too similar. Darken the text or lighten the background."],
+"button-name":["med","Accessibility","Some buttons have no label","Screen readers can not tell what these buttons do. Add a text label."],
+"link-name":["med","Accessibility","Some links have no text","Give icon links a text label so everyone knows where they go."],
+"label":["med","Accessibility","Form fields have no labels","Add a label to each form field so visitors know what to type."],
+"html-has-lang":["low","Accessibility","The page language is not set","Add lang=\"en\" to the html tag."],
+"heading-order":["low","Accessibility","Headings are out of order","Use headings in order (H1, then H2, then H3) so the page is easy to scan."],
+"target-size":["med","Accessibility","Buttons and links are too small to tap","Make tap targets at least 24 by 24 pixels with space between them."],
+"tap-targets":["med","Accessibility","Buttons and links are too small to tap","Make tap targets bigger and spaced out."],
+"font-size":["med","SEO","Text is too small on phones","Use at least 16 px body text so visitors do not have to zoom."],
+"landmark-one-main":["low","Accessibility","The page has no main section marked","Wrap the main content in a main tag so screen readers can jump to it."],
+"label-content-name-mismatch":["low","Accessibility","Some button labels do not match their visible text","Make each button's hidden label match the words people see."],
+"unsized-images":["med","Speed","Images have no set size","Add width and height to images so the page does not jump while loading."],
+"frame-title":["low","Accessibility","Embedded frames have no title","Give maps, videos and other embeds a title."],
+"errors-in-console":["low","Best practices","The page has errors behind the scenes","The browser logged script errors. Something on the page may be broken."],
+"image-aspect-ratio":["low","Best practices","Some images look stretched","Display images at their natural shape."],
+"image-size-responsive":["low","Best practices","Some images look blurry","Serve images at a sharp enough size for phone screens."],
+"deprecations":["low","Best practices","The site uses outdated browser features","Update old plugins or code before browsers stop supporting them."],
+"inspector-issues":["low","Best practices","The browser flagged issues on the page","Check cookies, mixed content and security warnings."],
+"geolocation-on-start":["med","Best practices","The site asks for location right away","Only ask for location after a visitor taps something."],
+"notification-on-start":["med","Best practices","The site asks to send notifications right away","Visitors find this pushy. Only ask after they show interest."],
+"paste-preventing-inputs":["low","Best practices","Some fields block pasting","Let visitors paste into form fields."],
+"third-party-cookies":["low","Best practices","The site uses third-party cookies","Browsers are phasing these out. Review which widgets set them."]
+};
+var RANK={high:3,med:2,low:1};
+var lastFix=[];
+
+function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+function clear(n){while(n.firstChild)n.removeChild(n.firstChild)}
+function status(t){$("status").style.display="block";$("stxt").textContent=t}
+function colorFor(s){return s>=90?"g":s>=50?"o":"r"}
+
+function normalize(raw){
+  var s=(raw||"").trim();
+  if(!s)return null;
+  if(!/^https?:\/\//i.test(s))s="https://"+s;
+  try{var u=new URL(s)}catch(e){return null}
+  if(!/^[a-z0-9.-]+\.[a-z]{2,}$/i.test(u.hostname))return null;
+  if(/^(localhost|127\.|10\.|192\.168\.)/.test(u.hostname))return null;
+  u.protocol="https:";u.hash="";
+  return u;
+}
+
+function timeoutFetch(url,opts,ms){
+  var c=new AbortController();var t=setTimeout(function(){c.abort()},ms);
+  opts=opts||{};opts.signal=c.signal;
+  return fetch(url,opts).finally(function(){clearTimeout(t)});
+}
+
+function runPSI(url){
+  var q="https://www.googleapis.com/pagespeedonline/v5/runPagespeed?strategy=mobile&url="+encodeURIComponent(url);
+  CATS.forEach(function(c){q+="&category="+c[0]});
+  return timeoutFetch(q,{},90000).then(function(r){
+    if(!r.ok)throw new Error("psi "+r.status);
+    return r.json();
+  }).then(function(j){
+    if(!j.lighthouseResult||!j.lighthouseResult.categories)throw new Error("psi empty");
+    return {lh:j.lighthouseResult,meta:null,via:"Google PageSpeed Insights"};
+  });
+}
+
+function runMicrolink(url){
+  var q="https://api.microlink.io/?url="+encodeURIComponent(url)+"&meta=true&insights.lighthouse=true&insights.technologies=false";
+  return timeoutFetch(q,{},120000).then(function(r){
+    return r.json().catch(function(){return {}}).then(function(j){
+      if(r.status===429)throw Object.assign(new Error("limit"),{limit:true});
+      if(!r.ok||j.status!=="success")throw new Error((j&&j.message)||("microlink "+r.status));
+      var lh=j.data&&j.data.insights&&j.data.insights.lighthouse;
+      if(!lh||!lh.categories)throw new Error("Lighthouse could not load this site");
+      return {lh:lh,meta:j.data,via:"Microlink (Google Lighthouse)"};
+    });
+  });
+}
+
+function dns(name,type){
+  return timeoutFetch("https://dns.google/resolve?name="+encodeURIComponent(name)+"&type="+type,{},8000)
+    .then(function(r){return r.json()}).then(function(j){return j.Status===0&&(j.Answer||[]).length>0})
+    .catch(function(){return null});
+}
+function httpsReachable(u){
+  return timeoutFetch(u.origin+"/",{mode:"no-cors",cache:"no-store",redirect:"follow"},15000)
+    .then(function(){return true}).catch(function(){return false});
+}
+
+function audit(lh,id){return lh&&lh.audits&&lh.audits[id]}
+function auditPass(lh,id){var a=audit(lh,id);if(!a||a.score==null||a.scoreDisplayMode==="notApplicable")return null;return a.score>=0.9}
+
+function buildFixes(lh){
+  var refs={};
+  CATS.forEach(function(c){var cat=lh.categories[c[0]];(cat&&cat.auditRefs||[]).forEach(function(r){if(!refs[r.id])refs[r.id]={cat:c[1],w:r.weight||0}})});
+  var out=[],seen={};
+  Object.keys(refs).forEach(function(id){
+    if(SKIP[id])return;
+    var a=lh.audits[id];if(!a)return;
+    if(a.score==null||a.score>=0.9)return;
+    if(/notApplicable|manual|informative|error/.test(a.scoreDisplayMode||""))return;
+    var m=MAP[id],v=(a.displayValue||"").replace(/\s+/g," ").replace(/^Est\.? savings of /i,"").trim();
+    var title,desc,pri,area;
+    if(m){pri=m[0];area=m[1];title=m[2];desc=v?m[3].replace(/\[([^\]]*)\]/g,"$1").replace("{v}",v):m[3].replace(/\s*\[[^\]]*\]/g,"").trim()}
+    else{area=refs[id].cat;title=(a.title||id).replace(/\[([^\]]+)\]\([^)]+\)/g,"$1");desc=v?("Lighthouse result: "+v+". The full technical report below has the details."):"";pri=a.score<0.5&&refs[id].w>=3?"med":"low"}
+    if(!desc)desc="Flagged by Google Lighthouse. The full technical report below has the details a web developer needs to fix it.";
+    if(seen[title])return;seen[title]=1;
+    var sev=RANK[pri]*10+(1-a.score)*5+Math.min(refs[id].w,10)/2;
+    out.push({id:id,pri:pri,area:area,title:title,desc:desc,sev:sev});
+  });
+  out.sort(function(a,b){return b.sev-a.sev});
+  return out;
+}
+
+function renderFixes(list,all){
+  var ol=$("fixes");clear(ol);
+  var show=all?list:list.slice(0,8);
+  if(!list.length){var li=el("li","fix");li.appendChild(el("h3",null,"Nothing major to fix"));li.appendChild(el("p",null,"Lighthouse did not flag any important problems. Nice work."));ol.appendChild(li)}
+  show.forEach(function(f){
+    var li=el("li","fix");var h=el("h3");
+    h.appendChild(el("span","tag "+f.pri,f.pri==="med"?"Medium":f.pri==="high"?"High":"Low"));
+    h.appendChild(document.createTextNode(f.title));
+    li.appendChild(h);li.appendChild(el("div","area",f.area));
+    li.appendChild(el("p",null,f.desc));
+    ol.appendChild(li);
+  });
+  var more=$("more");
+  if(!all&&list.length>8){more.style.display="inline-block";more.textContent="Show all "+list.length+" fixes"}else more.style.display="none";
+}
+
+function addCheck(ul,state,text,detail){
+  var li=el("li");var d=el("span","dot "+(state===true?"pass":state===false?"fail":state==="warn"?"warn":"na"),state===true?"\u2713":state===false?"\u2715":state==="warn"?"!":"?");
+  d.setAttribute("aria-label",state===true?"Pass":state===false?"Fail":state==="warn"?"Warning":"Unknown");
+  li.appendChild(d);var s=el("span");s.appendChild(el("strong",null,text));if(detail){s.appendChild(document.createElement("br"));s.appendChild(el("span","small",detail))}li.appendChild(s);ul.appendChild(li);
+}
+
+function render(u,res,extra){
+  $("results").style.display="block";
+  $("site").textContent=u.hostname;
+  var lh=res&&res.lh,cats=$("cats");clear(cats);
+  var ring=$("ring");
+  if(lh){
+    var sum=0,n=0;
+    CATS.forEach(function(c){var cat=lh.categories[c[0]];var s=cat&&cat.score!=null?Math.round(cat.score*100):null;
+      var box=el("div","cat");box.appendChild(el("b",s==null?"":colorFor(s),s==null?"n/a":String(s)));box.appendChild(el("span",null,c[1]));cats.appendChild(box);
+      if(s!=null){sum+=s;n++}});
+    var score=n?Math.round(sum/n):0;
+    $("score").textContent=String(score);
+    ring.style.setProperty("--p",score);ring.style.setProperty("--c",score>=90?"var(--good)":score>=50?"var(--ok)":"var(--bad)");
+    $("grade").textContent=score>=90?"Looking good":score>=70?"Decent, with room to improve":score>=50?"Needs work":"Needs a lot of work";
+    $("grade").className="grade "+colorFor(score);
+    $("method").textContent="Mobile test by "+res.via+". Overall score is the average of the four category scores.";
+    lastFix=buildFixes(lh);renderFixes(lastFix,false);
+    var pl=$("psilink");clear(pl);var a=el("a",null,"See the full technical report on Google PageSpeed Insights");a.href="https://pagespeed.web.dev/analysis?url="+encodeURIComponent(u.href);a.rel="noopener";a.target="_blank";pl.appendChild(a);
+    $("fixtitle").textContent="Your fix list";$("fixnote").textContent="Sorted by what matters most to customers and Google.";
+  }else{
+    $("score").textContent="?";ring.style.setProperty("--p",0);
+    $("grade").textContent="Full test unavailable right now";$("grade").className="grade o";
+    $("method").textContent=extra.reason;
+    clear($("fixes"));clear($("psilink"));$("more").style.display="none";
+    $("fixtitle").textContent="Full fix list";$("fixnote").textContent="The speed and SEO test could not run, so only the basics below were checked. Try again later, or request help and I will run it for you.";
+  }
+  var ul=$("checks");clear(ul);
+  var meta=res&&res.meta;
+  var https=lh?auditPass(lh,"is-on-https"):null;if(https==null)https=extra.https;
+  addCheck(ul,extra.resolves===false?false:extra.resolves,"Domain is online",extra.resolves===false?"We could not find DNS records for this domain.":null);
+  addCheck(ul,https,"Secure HTTPS connection",https===false?"Visitors may see a \"Not secure\" warning.":null);
+  if(lh){
+    var t=auditPass(lh,"document-title"),d=auditPass(lh,"meta-description"),vp=auditPass(lh,"viewport");if(vp==null)vp=auditPass(lh,"meta-viewport");
+    addCheck(ul,t,"Page title",t===false?"Add a title with your business name, service and city.":(meta&&meta.title?meta.title:null));
+    addCheck(ul,d,"Search description",d===false?"Add a meta description. It is the text Google shows under your link.":null);
+    addCheck(ul,vp,"Set up for phones",vp===false?"Add a mobile viewport tag so the site fits phone screens.":null);
+    var lcp=audit(lh,"largest-contentful-paint");
+    if(lcp&&lcp.numericValue!=null){var sec=lcp.numericValue/1000;addCheck(ul,sec<=2.5?true:sec<=4?"warn":false,"Main content shows fast",(sec<0.1?"Under 0.1 s":"Took "+sec.toFixed(1)+" s")+" on a simulated phone (good is 2.5 s or less).")}
+  }
+  if(meta){addCheck(ul,meta.image&&meta.image.url?true:"warn","Share image",meta.image&&meta.image.url?"Links to your site show a preview image.":"Add an og:image so links shared in texts and social posts show a picture.")}
+  if(extra.mx!==undefined)addCheck(ul,extra.mx?true:"warn","Email on your own domain",extra.mx?"Your domain has email set up.":"No email found for this domain. An address like you@"+extra.root+" looks more professional than a free email.");
+  $("results").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+var PLATFORM=/(\.github\.io|\.wixsite\.com|\.squarespace\.com|\.weebly\.com|\.godaddysites\.com|\.wordpress\.com|\.square\.site|\.business\.site|\.netlify\.app|\.vercel\.app|\.carrd\.co|\.webflow\.io|\.framer\.website|\.myshopify\.com)$/i;
+
+form.addEventListener("submit",function(ev){
+  ev.preventDefault();err.textContent="";
+  var u=normalize(input.value);
+  if(!u){err.textContent="Please enter a website address, like yourbusiness.com";input.focus();return}
+  input.value=u.href;go.disabled=true;go.textContent="Checking...";
+  $("results").style.display="none";
+  status("Running a mobile page load of "+u.hostname+". This usually takes 20 to 60 seconds...");
+  var host=u.hostname.replace(/^www\./,""),parts=host.split("."),root=parts.slice(-2).join(".");
+  var extra={root:root};
+  var basics=Promise.all([
+    Promise.all([dns(u.hostname,"A"),dns(u.hostname,"AAAA"),dns(u.hostname,"CNAME")]).then(function(r){extra.resolves=r[0]||r[1]||r[2]?true:(r[0]===null?null:false)}),
+    httpsReachable(u).then(function(ok){extra.https=ok}),
+    PLATFORM.test(host)?Promise.resolve():dns(root,"MX").then(function(m){if(m!==null)extra.mx=m})
+  ]);
+  var tick=0,msgs=["Loading the page like a phone would...","Measuring speed and layout...","Checking SEO and accessibility...","Almost done. Bigger sites take longer..."];
+  var iv=setInterval(function(){tick++;status(msgs[Math.min(Math.floor(tick/3),msgs.length-1)])},5000);
+  var limitHit=false;
+  var analysis=runPSI(u.href).catch(function(){status("Switching to the backup testing service...");return runMicrolink(u.href)}).catch(function(e){limitHit=!!(e&&e.limit);return {fail:e}});
+  Promise.all([analysis,basics]).then(function(r){
+    var res=r[0];
+    if(res.fail){
+      extra.reason=limitHit?"The free testing services have hit their daily limit for your connection. Try again tomorrow, or request help below.":"The testing service could not load this site ("+(res.fail.message||"unknown error")+"). Check the address and try again.";
+      render(u,null,extra);
+    }else render(u,res,extra);
+  }).catch(function(e){err.textContent="Something went wrong: "+(e&&e.message||e)}).finally(function(){
+    clearInterval(iv);$("status").style.display="none";go.disabled=false;go.textContent="Check my site";
+  });
+});
+
+$("more").addEventListener("click",function(){renderFixes(lastFix,true)});
+
+try{var p=new URLSearchParams(location.search).get("url");if(p)input.value=p}catch(e){}
+})();
+</script>
+</body>
+</html>
