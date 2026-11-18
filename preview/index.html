@@ -78,9 +78,9 @@ nav ul a:hover{color:#fff}
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .proj{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--paper);display:flex;flex-direction:column}
 .proj.wide{grid-column:span 2}
-.proj .ph{display:grid;grid-template-columns:2fr 1fr;gap:2px;background:var(--line);height:250px}
+.proj .ph{display:grid;grid-template-columns:2fr 1fr;gap:2px;background:var(--line);height:250px;overflow:hidden}
 .proj.wide .ph{height:340px}
-.proj .ph img{width:100%;height:100%;object-fit:cover}
+.proj .ph img{width:100%;height:100%;max-height:100%;aspect-ratio:auto;object-fit:cover}
 .proj .t{padding:22px 24px 26px}
 .tag{display:inline-block;font:600 .7rem/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);background:var(--white);border-radius:99px;padding:6px 10px}
 .proj h3{margin:12px 0 6px}
